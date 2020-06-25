@@ -38,7 +38,7 @@ redirect_from:
 
 <b>What kinds of projects?</b><br>
 
-<font size="3em">In addition to building a machine learning library from scratch, students are also building a Space Empires-themed game. Later down the road, we'll build autonomous agents to compete using a variety of AI-based strategies.</font>
+<font size="3em">In addition to building a machine learning library from scratch, students are also building a Space Empires-themed game. Later down the road, they'll build autonomous agents to compete using a variety of AI-based strategies.</font>
 
 
 </div>
