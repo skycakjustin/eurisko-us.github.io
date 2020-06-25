@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Eurisko"
 title_separator          : "-"
-name                     : &name "Eurisko"
+name                     : &name "Eurisko.us"
 description              : &description
 url                      : https://eurisko-us.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
