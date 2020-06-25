@@ -3,8 +3,11 @@ main:
   - title: "Assignments"
     url: /assignments/
 
-   - title: "People"
-     url: /people/
+  #- title: "Blog"
+  #  url: /blog/
+
+  - title: "People"
+    url: /people/
     
   #- title: "Teaching"
   #  url: /teaching/
