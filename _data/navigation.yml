@@ -1,0 +1,73 @@
+# main links links
+main:  
+  - title: "eLearning"
+    url: /elearning/
+
+  - title: "Education"
+    url: /education/
+    
+  #- title: "Teaching"
+  #  url: /teaching/
+    
+  #- title: "Prep"
+  #  url: /prep/
+  
+  #- title: "Tutoring"
+  #  url: /tutoring/
+    
+  - title: "Books"
+    url: /books/
+
+  #- title: "Blog"
+  #  url: /blog/
+    
+  - title: "Blog"
+    url: /blog/
+    
+  #- title: "Courses"
+  #  url: /courses/
+    
+  #- title: "AI High"
+  #  url: /aihigh/
+  
+  #- title: "Videos"
+  #  url: /videos/
+    
+  #- title: "Innovation"
+  #  url: /innovation/
+    
+  #- title: "Service"
+  #  url: /service/
+    
+  #- title: "Bio"
+  #  url: /bio/
+    
+  - title: "Contact"
+    url: /contact/
+    
+  #- title: "Login"
+  #  url: /login/
+    
+  #- title: "Music"
+  #  url: /music/
+    
+  #- title: "Publications"
+  #  url: /publications/
+
+  #- title: "Talks"
+  #  url: /talks/    
+
+  #- title: "Teaching"
+  #  url: /teaching/    
+    
+  #- title: "Portfolio"
+  #  url: /portfolio/
+        
+  #- title: "Blog Posts"
+  #  url: /year-archive/
+    
+  #- title: "CV"
+  #  url: /cv/
+    
+  #- title: "Guide"
+  #  url: /markdown/

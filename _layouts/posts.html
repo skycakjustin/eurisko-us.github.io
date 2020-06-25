@@ -1,0 +1,50 @@
+---
+layout: archive
+---
+
+<head>
+    <style type="text/css">
+       a.nav:link {color: black;}    /* unvisited link */
+       a.nav:visited {color: black;}   /* visited link */
+       a.nav:hover {color: #0066ff; text-decoration: underline;}    /* mouse over link */
+       a.nav:active {color: #0066ff; text-decoration: underline;}   /* selected link */
+       a.body:link {color: maroon;}    /* unvisited link */
+       a.body:visited {color: maroon;}   /* visited link */
+       a.body:hover {color: #0066ff; text-decoration: underline;}    /* mouse over link */
+       a.body:active {color: #0066ff; text-decoration: underline;}   /* selected link */
+       a.home:link {color: #0066ff;}    /* unvisited link */
+       a.home:visited {color: #0066ff;}   /* visited link */
+       a.home:hover {color: #0066ff; text-decoration: none;}    /* mouse over link */
+       a.home:active {color: #0066ff; text-decoration: none;}   /* selected link */
+    </style>
+</head>
+
+<div style="width:100%; max-width:800px; margin:auto">  
+  
+{{ content }}
+
+<!--<ul class="taxonomy__index">
+  {% assign postsInYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+  {% for year in postsInYear %}
+    <li>
+      <a href="#{{ year.name }}">
+        <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>-->
+
+{% assign postsByYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+{% for year in postsByYear %}
+  <section id="{{ year.name }}" class="taxonomy__section">
+    <h2 class="archive__subtitle">{{ year.name }}</h2>
+    <div class="entries-{{ page.entries_layout | default: 'list' }}">
+      {% for post in year.items %}
+        {% include archive-single.html type=page.entries_layout %}
+      {% endfor %}
+    </div>
+    <a href="#top" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+  </section>
+{% endfor %}
+
+</div>
