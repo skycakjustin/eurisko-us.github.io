@@ -29,7 +29,7 @@ redirect_from:
 <div style="width:100%; max-width:800px; margin:auto">
 
 <div style="width:25%;float:left;">
-<img src="https://jpskycak.github.io/files/icon-mathacademy.png" align="left" style="border: none; /* height: 10em; */" alt="icon">
+<img src="https://eurisko-us.github.io/files/icon-mathacademy-circleBorder.png" align="left" style="border: none; /* height: 10em; */" alt="icon">
 </div>
 
 <div style="width:70%;float:right;">
