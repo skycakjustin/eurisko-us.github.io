@@ -34,23 +34,13 @@ redirect_from:
 
 <div style="width:70%;float:right;">
   <br>
-  Eurisko is a group of high schoolers working on advanced projects in computer science. The group was formed during the summer of 2020 as an applied branch of Math Academy.<br><br>
+  Eurisko is a lab of high schoolers working on advanced projects in computer science. It was formed during the summer of 2020 as a spinoff of <a class="body" target="_blank" href="https://mathacademy.us">Math Academy</a>.<br><br>
 
 <b>What kinds of projects?</b><br>
 
 <font size="3em">(write a bit about the game idea - where we're headed)</font>
 
-<b>What kinds of projects?</b><br>
 
-<font size="3em">(write a bit about the game idea - where we're headed)</font>
-
-<br><br><b>Don't you have to know a bunch of math to do this?</b><br>
-
-<font size="3em">(most students in Eurisko have gone through math academy sequence(plug for math academy)</font>
-
-<br><br><b>What else do you do, outside of math?</b><br>
-
-<font size="3em">I also play gu<a class="body" target="_blank" href="https://photos.app.goo.gl/C4g63172JTyQ6TN97">i</a>tar/bass and enjoy <a class="body" target="_blank" href="https://www.youtube.com/playlist?list=PLnUF1FJQzFe60kMVon9DdKAr6cxNYJXy-">producing music</a> once in a while. I'm currently learning piano.</font>
 </div>
 
 </div>
