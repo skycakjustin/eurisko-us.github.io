@@ -1,10 +1,10 @@
 # main links links
 main:  
-  - title: "eLearning"
-    url: /elearning/
+  - title: "Assignments"
+    url: /assignments/
 
-  - title: "Education"
-    url: /education/
+   - title: "People"
+     url: /people/
     
   #- title: "Teaching"
   #  url: /teaching/
@@ -15,14 +15,14 @@ main:
   #- title: "Tutoring"
   #  url: /tutoring/
     
-  - title: "Books"
-    url: /books/
+  #- title: "Books"
+  #  url: /books/
 
   #- title: "Blog"
   #  url: /blog/
     
-  - title: "Blog"
-    url: /blog/
+  #- title: "Blog"
+  #  url: /blog/
     
   #- title: "Courses"
   #  url: /courses/
