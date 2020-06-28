@@ -33,7 +33,7 @@ author_profile: false
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_013.ipynb">Binary Trees, Normalization / Distance, Armor / Movement</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_012.ipynb">Compression, Binary Trees, Attack/Defense Technology, Single-Variable Gradient Descent</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_011.ipynb">Timing, Sorting, Board Plotting, Inverse by Minors</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_010.ipynb">Timing, Sorting, Doubly Linked List, Game, and Determinant</a></li>
+    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_010.ipynb">Sorting, Doubly Linked List, Game, and Determinant</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_009.ipynb">Sorting, LinkedList, Game, and Determinant</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_008.ipynb">Comprehension, Recursion, Linked Lists, Matrix Inversion, Solving Linear Systems</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_007.ipynb">Comprehension, Recursion, Classes, RREF Tests</a></li>
