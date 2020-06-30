@@ -29,20 +29,20 @@ author_profile: false
 <b>2020 Summer</b>
 <font size="3em"><ol reversed>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_015.ipynb">DFS, Linear Regression via Gradient Descent, Maintenance Costs + Group Combat</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_014.ipynb">Binary Tree From Edges, Linear Regression, 2-Variable Gradient Descent, Speed Technology & Unit Building</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_013.ipynb">Binary Trees, Normalization / Distance, Armor / Movement</a></li>
+    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_014.ipynb">Binary Tree From Edges, Linear Regression, 2-Variable Gradient Descent, Speed Technology + Unit Building</a></li>
+    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_013.ipynb">Binary Trees, Normalization/Distance, Armor/Movement</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_012.ipynb">Compression, Binary Trees, Attack/Defense Technology, Single-Variable Gradient Descent</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_011.ipynb">Timing, Sorting, Board Plotting, Inverse by Minors</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_010.ipynb">Sorting, Doubly Linked List, Game, and Determinant</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_009.ipynb">Sorting, LinkedList, Game, and Determinant</a></li>
+    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_010.ipynb">Sorting, Doubly Linked List, Game, Determinant</a></li>
+    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_009.ipynb">Sorting, LinkedList, Game, Determinant</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_008.ipynb">Comprehension, Recursion, Linked Lists, Matrix Inversion, Solving Linear Systems</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_007.ipynb">Comprehension, Recursion, Classes, RREF Tests</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_006.ipynb">Newton-Rhapson, Row Reduced Echelon Form</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_005.ipynb">Classes, Estimation, and Row Reduction Helpers</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_004.ipynb">Comprehensions, Big-O Notation, Recursion, and Indexing</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_003.ipynb">Elementary Data Structures, Overloading, and Brute-Force Search</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_002.ipynb">Tuples, Dictionaries, and Classes</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_001.ipynb">Intro to Google Colab; Strings / Integers in Python</a></li>
+    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_005.ipynb">Classes, Estimation, Row Reduction Helpers</a></li>
+    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_004.ipynb">Comprehensions, Big-O Notation, Recursion, Indexing</a></li>
+    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_003.ipynb">Elementary Data Structures, Overloading, Brute-Force Search</a></li>
+    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_002.ipynb">Tuples, Dictionaries, Classes</a></li>
+    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_001.ipynb">Colab, Strings/Integers in Python</a></li>
 </ol></font>  
 
 </div>
