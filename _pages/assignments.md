@@ -28,6 +28,9 @@ author_profile: false
 
 <b>2020 Summer</b>
 <font size="3em"><ol reversed>
+    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_018.ipynb">GradientDescent and PolynomialRegressor Classes, Heapsort, Final Features on Game (version 1)</a></li>
+    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_017.ipynb">Quadratic Regression, Heaps, Ship Yards</a></li>
+    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_016.ipynb">Grid Search, Breadth-First Search, Colonies/Planets</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_015.ipynb">Depth-First Search, Linear Regression via Gradient Descent, Maintenance Costs + Group Combat</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_014.ipynb">Binary Tree From Edges, Linear Regression, 2-Variable Gradient Descent, Speed Technology + Unit Building</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_013.ipynb">Binary Trees, Normalization/Distance, Armor/Movement</a></li>
