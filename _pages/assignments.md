@@ -28,6 +28,7 @@ author_profile: false
 
 <b>2020 Summer</b>
 <font size="3em"><ol reversed>
+    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_019.ipynb">Generalized GradientDescent, Repl.it/Github/Colab Integration, Game Phases</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_018.ipynb">GradientDescent and PolynomialRegressor Classes, Heapsort, Final Features on Game (version 1)</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_017.ipynb">Quadratic Regression, Heaps, Ship Yards</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_016.ipynb">Grid Search, Breadth-First Search, Colonies/Planets</a></li>
