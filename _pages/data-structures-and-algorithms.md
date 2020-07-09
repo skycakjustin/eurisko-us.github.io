@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: ""
-permalink: /assignments/
+permalink: /data-structures-and-algorithms/
 author_profile: false
 ---
 
@@ -22,7 +22,7 @@ author_profile: false
     </style>
 </head>
 
-# [<center>Assignments</center>](#top)
+# [<center>Data Structures and Algorithms</center>](#top)
 
 <div style="width:100%; max-width:800px; margin:auto">      
 
