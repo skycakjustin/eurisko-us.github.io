@@ -41,7 +41,7 @@ author_profile: false
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_009.ipynb">Sorting, LinkedList, Game, Determinant</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_008.ipynb">Comprehension, Recursion, Linked Lists, Matrix Inversion, Solving Linear Systems</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_007.ipynb">Comprehension, Recursion, Classes, RREF Tests</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_006.ipynb">Newton-Rhapson, Row Reduced Echelon Form</a></li>
+    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_006.ipynb">Newton-Rhapson, Reduced Row Echelon Form</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_005.ipynb">Classes, Estimation, Row Reduction Helpers</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_004.ipynb">Comprehensions, Big-O Notation, Recursion, Indexing</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_003.ipynb">Elementary Data Structures, Overloading, Brute-Force Search</a></li>
