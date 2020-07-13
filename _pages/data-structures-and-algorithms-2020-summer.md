@@ -32,12 +32,45 @@ author_profile: false
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_018.ipynb">GradientDescent and PolynomialRegressor Classes, Heapsort, Final Features on Game (version 1)</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_017.ipynb">Quadratic Regression, Heaps, Ship Yards</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_016.ipynb">Grid Search, Breadth-First Search, Colonies/Planets</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_015.ipynb">Depth-First Search, Linear Regression via Gradient Descent, Maintenance Costs + Group Combat</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_014.ipynb">Binary Tree From Edges, Linear Regression, 2-Variable Gradient Descent, Speed Technology + Unit Building</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_013.ipynb">Binary Trees, Normalization/Distance, Armor/Movement</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_012.ipynb">Compression, Binary Trees, Attack/Defense Technology, Single-Variable Gradient Descent</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_011.ipynb">Timing, Sorting, Board Plotting, Inverse by Minors</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_010.ipynb">Sorting, Doubly Linked List, Game, Determinant</a></li>
+
+    <li>
+        <ul>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-15-1">Depth-First Search in a Binary Tree</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-15-2">Linear Regression via Gradient Descent</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-15-3">Space Empires - Maintenance Costs & Group Combat</a></li>
+        </ul>
+    </li>
+    <li>
+        <ul>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-14-1">Building a Binary Tree from an Edge List (redo)</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-14-2">Linear Regression via the Pseudoinverse</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-14-3">Linear Regression via Gradient Descent</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-14-4">Space Empires - Speed Technology & Unit Building</a></li>
+        </ul>
+    </li>
+    <li>
+        <ul>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-13-1">Building a Binary Tree from an Edge List</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-13-2">Normalization and Distance Metrics</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-13-3">Space Empires - Armor / Movement</a></li>
+        </ul>
+    </li>
+    <li>
+        <ul>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-12-1">Huffman Compression</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-12-2">Building a Binary Tree by Repeatedly Appending</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-12-3">Space Empires - Attack/Defense Technology</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-12-4">Single-Variable Gradient Descent</a></li>
+        </ul>
+    </li>
+    <li>
+        <ul>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-11-1">Timing Code</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-11-2">Shell Sort</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-11-3">Rendering the Game Board</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-11-4">Inverse by Minors</a></li>
+        </ul>
+    </li>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-10-1">Doubly Linked List</a></li>
