@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: ""
-permalink: /data-structures-and-algorithms/
+permalink: /data-structures-and-algorithms-2020-summer/
 author_profile: false
 ---
 
