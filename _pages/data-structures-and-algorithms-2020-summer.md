@@ -28,11 +28,47 @@ author_profile: false
 
 <b>2020 Summer</b>
 <font size="3em"><ol reversed>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_019.ipynb">Generalized GradientDescent, Repl.it/Github/Colab Integration, Game Phases</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_018.ipynb">GradientDescent and PolynomialRegressor Classes, Heapsort, Final Features on Game (version 1)</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_017.ipynb">Quadratic Regression, Heaps, Ship Yards</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_016.ipynb">Grid Search, Breadth-First Search, Colonies/Planets</a></li>
-
+    <li>
+        <ul>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-21-1">Cartesian Product</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-21-2">GradientDescent Tests Output Format; Generalizing Grid Search to Any Number of Parameters</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-21-3">Space Empires - Board Class</a></li>
+        </ul>
+    </li>
+    <li>
+        <ul>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-20-1">Assert Statements and GradientDescent Tests</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-20-2">Space Empires - 3-Round Movement</a></li>
+        </ul>
+    </li>
+    <li>
+        <ul>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-19-1">Structure for <i>machine-learning</i> and <i>space-empires</i> Libraries</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-19-2">Generalizing GradientDescent to Functions with Any Number of Arguments</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-19-3">Space Empires - 3-Phase Turns</a></li>
+        </ul>
+    </li>
+    <li>
+        <ul>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-18-1">GradientDescent and PolynomialRegressor Classes</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-18-2">Heapsort</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-18-3">Space Empires - Final Features in Version 1</a></li>
+        </ul>
+    </li>
+    <li>
+        <ul>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-17-1">Quadratic Regression</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-17-2">Heapifying an Array</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-17-3">Space Empires - Ship Yards</a></li>
+        </ul>
+    </li>
+    <li>
+        <ul>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-16-1">Grid Searching for the Best Linear Regression Coefficients via Gradient Descent</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-16-2">Breadth-First Search in a Binary Tree</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-16-3">Space Empires - Colonies & Planets</a></li>
+        </ul>
+    </li>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-15-1">Depth-First Search in a Binary Tree</a></li>
