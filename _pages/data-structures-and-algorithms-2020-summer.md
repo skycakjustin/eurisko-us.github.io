@@ -35,12 +35,14 @@ author_profile: false
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-21-3">Space Empires - Board Class</a></li>
         </ul>
     </li>
+    <br>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-20-1">Assert Statements and GradientDescent Tests</a></li>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-20-2">Space Empires - 3-Round Movement</a></li>
         </ul>
     </li>
+    <br>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-19-1">Structure for <i>machine-learning</i> and <i>space-empires</i> Libraries</a></li>
@@ -48,6 +50,7 @@ author_profile: false
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-19-3">Space Empires - 3-Phase Turns</a></li>
         </ul>
     </li>
+    <br>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-18-1">GradientDescent and PolynomialRegressor Classes</a></li>
@@ -55,6 +58,7 @@ author_profile: false
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-18-3">Space Empires - Final Features in Version 1</a></li>
         </ul>
     </li>
+    <br>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-17-1">Quadratic Regression</a></li>
@@ -62,6 +66,7 @@ author_profile: false
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-17-3">Space Empires - Ship Yards</a></li>
         </ul>
     </li>
+    <br>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-16-1">Grid Searching for the Best Linear Regression Coefficients via Gradient Descent</a></li>
@@ -69,6 +74,7 @@ author_profile: false
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-16-3">Space Empires - Colonies & Planets</a></li>
         </ul>
     </li>
+    <br>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-15-1">Depth-First Search in a Binary Tree</a></li>
@@ -76,6 +82,7 @@ author_profile: false
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-15-3">Space Empires - Maintenance Costs & Group Combat</a></li>
         </ul>
     </li>
+    <br>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-14-1">Building a Binary Tree from an Edge List (redo)</a></li>
@@ -84,6 +91,7 @@ author_profile: false
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-14-4">Space Empires - Speed Technology & Unit Building</a></li>
         </ul>
     </li>
+    <br>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-13-1">Building a Binary Tree from an Edge List</a></li>
@@ -91,6 +99,7 @@ author_profile: false
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-13-3">Space Empires - Armor / Movement</a></li>
         </ul>
     </li>
+    <br>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-12-1">Huffman Compression</a></li>
@@ -99,6 +108,7 @@ author_profile: false
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-12-4">Single-Variable Gradient Descent</a></li>
         </ul>
     </li>
+    <br>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-11-1">Timing Code</a></li>
@@ -107,6 +117,7 @@ author_profile: false
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-11-4">Inverse by Minors</a></li>
         </ul>
     </li>
+    <br>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-10-1">Doubly Linked List</a></li>
@@ -115,6 +126,7 @@ author_profile: false
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-10-4">Recursive Determinant</a></li>
         </ul>
     </li>
+    <br>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-9-1">Selection Sort and Bubble Sort</a></li>
@@ -123,6 +135,7 @@ author_profile: false
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-9-4">Determinant via Reduced Row Echelon Form</a></li>
         </ul>
     </li>
+    <br>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-8-1">Median, Covariance, and Correlation</a></li>
@@ -132,6 +145,7 @@ author_profile: false
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-8-5">Inverse of a Matrix Using Gaussian Elimination</a></li>
         </ul>
     </li>
+    <br>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-7-1">Logic Within List Comprehensions</a></li>
@@ -140,6 +154,7 @@ author_profile: false
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-7-4">Reduced Row Echelon Form for Matrices that Do Not Reduce to the Identity Matrix</a></li>
         </ul>
     </li>
+    <br>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-6-1">Mean, Variance, and Standard Deviation</a></li>
@@ -148,6 +163,7 @@ author_profile: false
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-6-4">Reduced Row Echelon Form for Matrices that Reduce to the Identity Matrix</a></li>
         </ul>
     </li>
+    <br>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-5-1">Inheritance with Shape Classes</a></li>
@@ -155,6 +171,7 @@ author_profile: false
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-5-3">Row Reduction Helper Methods</a></li>
         </ul>
     </li>
+    <br>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-4-1">List and Dictionary Comprehensions</a></li>
@@ -163,6 +180,7 @@ author_profile: false
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-4-4">Refactoring and Overloading Operators in the Matrix Class</a></li>
         </ul>
     </li>
+    <br>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-3-1">Stacks and Queues</a></li>
@@ -171,6 +189,7 @@ author_profile: false
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-3-4">Brute-Force Decryption</a></li>
         </ul>
     </li>
+    <br>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-2-1">Intersection and Union</a></li>
@@ -178,6 +197,7 @@ author_profile: false
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-2-3">Matrix Arithmetic</a></li>
         </ul>
     </li>
+    <br>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-1-1">Converting Between Letters and Numbers</a></li>
