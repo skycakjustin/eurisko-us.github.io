@@ -26,8 +26,9 @@ author_profile: false
 
 <div style="width:100%; max-width:800px; margin:auto">      
 
+<b>Summer 2020</b>
 <font size="3em"><ul>
-    <li><a class="body" target="_blank" href="https://eurisko-us.github.io/data-structures-and-algorithms">Data Structures and Algorithms</a></li>
+    <li><a class="body" target="_blank" href="https://eurisko-us.github.io/data-structures-and-algorithms-2020-summer">Data Structures and Algorithms</a></li>
 </ul></font> 
 
 </div>
