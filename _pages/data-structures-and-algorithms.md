@@ -46,7 +46,14 @@ author_profile: false
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_004.ipynb">Comprehensions, Big-O Notation, Recursion, Indexing</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_003.ipynb">Elementary Data Structures, Overloading, Brute-Force Search</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_002.ipynb">Tuples, Dictionaries, Classes</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_001.ipynb">Colab, Strings/Integers in Python</a></li>
+    <li>
+        <ul>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-1-1">Converting Between Letters and Numbers</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-1-2">Checking a String for Symmetry</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-1-3">Converting Between Decimal and Binary</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-1-4">Checking if a Number is Prime</a></li>
+        </ul>
+    </li>
 </ol></font>  
 
 </div>
