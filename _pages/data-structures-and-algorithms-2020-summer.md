@@ -44,8 +44,21 @@ author_profile: false
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_006.ipynb">Newton-Rhapson, Reduced Row Echelon Form</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_005.ipynb">Classes, Estimation, Row Reduction Helpers</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_004.ipynb">Comprehensions, Big-O Notation, Recursion, Indexing</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_003.ipynb">Elementary Data Structures, Overloading, Brute-Force Search</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_002.ipynb">Tuples, Dictionaries, Classes</a></li>
+    <li>
+        <ol>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-3-1">Stacks and Queues</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-3-2">Converting between Flat and Nested Dictionaries</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-3-3">Generalizing the Matrix Class to M x N Matrices</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-3-4">Brute-Force Decryption</a></li>
+        </ol>
+    </li>
+    <li>
+        <ol>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-2-1">Intersection and Union</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-2-2">Counting Characters in a String</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-2-3">Matrix Arithmetic</a></li>
+        </ol>
+    </li>
     <li>
         <ol>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-1-1">Converting Between Letters and Numbers</a></li>
