@@ -26,7 +26,11 @@ author_profile: false
 
 <center><b>Summer 2020</b></center>
 
-<div style="width:100%; max-width:800px; margin:auto">      
+<br>
+
+<div style="width:100%; max-width:800px; margin:auto">  
+    
+<b>Assignments</b>
 
 <font size="3em"><ol reversed>
     <li>
