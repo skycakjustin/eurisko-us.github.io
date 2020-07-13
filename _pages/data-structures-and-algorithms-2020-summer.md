@@ -22,7 +22,9 @@ author_profile: false
     </style>
 </head>
 
-# [<center>Data Structures and Algorithms (Summer 2020)</center>](#top)
+# [<center>Data Structures and Algorithms</center>](#top)
+
+<center><b>Summer 2020</b></center>
 
 <div style="width:100%; max-width:800px; margin:auto">      
 
