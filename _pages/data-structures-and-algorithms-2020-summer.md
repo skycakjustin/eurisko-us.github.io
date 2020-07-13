@@ -46,8 +46,31 @@ author_profile: false
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_004.ipynb">Comprehensions, Big-O Notation, Recursion, Indexing</a></li>
     <li>
         <ul>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-6-1">Mean, Variance, and Standard Deviation</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-6-2">Is-a / Has-a</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-6-3">Finding Roots via Newton-Rhapson Search</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-6-4">Reduced Row Echelon Form</a></li>
+        </ul>
+    </li>
+    <li>
+        <ul>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-5-1">Inheritance with Shape Classes</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-5-2">Finding Roots via Bisection Search</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-5-3">Row Reduction Helper Methods</a></li>
+        </ul>
+    </li>
+    <li>
+        <ul>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-4-1">List and Dictionary Comprehensions</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-4-2">Big-O Notation</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-4-3">Recursive Sequences</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-4-4">Refactoring and Overloading Operators in the Matrix Class</a></li>
+        </ul>
+    </li>
+    <li>
+        <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-3-1">Stacks and Queues</a></li>
-        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-3-2">Converting between Flat and Nested Dictionaries</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-3-2">Converting Between Flat and Nested Dictionaries</a></li>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-3-3">Generalizing the Matrix Class to M x N Matrices</a></li>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-3-4">Brute-Force Decryption</a></li>
         </ul>
