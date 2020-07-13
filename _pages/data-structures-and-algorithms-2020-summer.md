@@ -38,18 +38,45 @@ author_profile: false
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_012.ipynb">Compression, Binary Trees, Attack/Defense Technology, Single-Variable Gradient Descent</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_011.ipynb">Timing, Sorting, Board Plotting, Inverse by Minors</a></li>
     <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_010.ipynb">Sorting, Doubly Linked List, Game, Determinant</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_009.ipynb">Sorting, LinkedList, Game, Determinant</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_008.ipynb">Comprehension, Recursion, Linked Lists, Matrix Inversion, Solving Linear Systems</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_007.ipynb">Comprehension, Recursion, Classes, RREF Tests</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_006.ipynb">Newton-Rhapson, Reduced Row Echelon Form</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_005.ipynb">Classes, Estimation, Row Reduction Helpers</a></li>
-    <li><a class="body" target="_blank" href="https://github.com/eurisko-us/assignments/blob/master/2020-summer/Assignment_004.ipynb">Comprehensions, Big-O Notation, Recursion, Indexing</a></li>
+    <li>
+        <ul>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-10-1">Doubly Linked List</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-10-2">Histogram (Counting) Sort and Insertion Sort</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-10-3">Class Architecture for Space Empires</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-10-4">Recursive Determinant</a></li>
+        </ul>
+    </li>
+    <li>
+        <ul>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-9-1">Selection Sort and Bubble Sort</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-9-2">Singly Linked List Methods</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-9-3">Game on a Grid</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-9-4">Determinant via Reduced Row Echelon Form</a></li>
+        </ul>
+    </li>
+    <li>
+        <ul>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-8-1">Median, Covariance, and Correlation</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-8-2">Untangling a Nested List Comprehension</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-8-3">Counting Iterations of a Recursive Function</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-8-4">Singly Linked List</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-8-5">Inverse of a Matrix Using Gaussian Elimination</a></li>
+        </ul>
+    </li>
+    <li>
+        <ul>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-7-1">Logic Within List Comprehensions</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-7-2">Factorial and Unlisting, Iteratively and Recursively</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-7-3">Implementing a Class Hierarchy Given Is-a / Has-a Relationships</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-7-4">Reduced Row Echelon Form for Matrices that Do Not Reduce to the Identity Matrix</a></li>
+        </ul>
+    </li>
     <li>
         <ul>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-6-1">Mean, Variance, and Standard Deviation</a></li>
-        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-6-2">Is-a / Has-a</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-6-2">Identifying Is-a / Has-a Relationships Given a Class Hierarchy</a></li>
         <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-6-3">Finding Roots via Newton-Rhapson Search</a></li>
-        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-6-4">Reduced Row Echelon Form</a></li>
+        <li><a class="body" target="_blank" href="https://github.com/eurisko-us/files/all_problems_iteration_1.html#Problem-6-4">Reduced Row Echelon Form for Matrices that Reduce to the Identity Matrix</a></li>
         </ul>
     </li>
     <li>
