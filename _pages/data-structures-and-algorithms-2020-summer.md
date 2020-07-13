@@ -22,11 +22,10 @@ author_profile: false
     </style>
 </head>
 
-# [<center>Data Structures and Algorithms</center>](#top)
+# [<center>Data Structures and Algorithms (Summer 2020)</center>](#top)
 
 <div style="width:100%; max-width:800px; margin:auto">      
 
-<b>2020 Summer</b>
 <font size="3em"><ol reversed>
     <li>
         <ul>
