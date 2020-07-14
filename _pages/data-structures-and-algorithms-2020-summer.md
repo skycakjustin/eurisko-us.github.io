@@ -33,6 +33,7 @@ author_profile: false
 <font size="3em"><ol reversed>
     <li>
         <ul>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-0">Library Structure and Naming Conventions</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-1">Cartesian Product</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-2">GradientDescent Tests Output Format; Generalizing Grid Search to Any Number of Parameters</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-3">Space Empires - Board Class</a></li>
@@ -169,6 +170,7 @@ author_profile: false
     <br>
     <li>
         <ul>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-5-0">Plotting Line Segments</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-5-1">Inheritance with Shape Classes</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-5-2">Finding Roots via Bisection Search</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-5-3">Row Reduction Helper Methods</a></li>
