@@ -94,6 +94,7 @@ lightOlive = '#ddff9f'
 
 var courses = {
 1: {'title': 'Data Structures & Algorithms', 'color': lightBlue},
+2: {'title': 'Machine Learning', 'color': lightGreen},
 }
 
 var resources = {
@@ -122,6 +123,7 @@ var resources = {
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-10-4" target="_blank">Recursive Determinant</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-11-4" target="_blank">Inverse by Minors</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-23-1" target="_blank">Matrix Tests</a>',
+      'todo: theory behind eigenvectors, QR algorithm for computing eigenvalues'
       ]},
     3: {'summary': [
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-3-1" target="_blank">Stacks and Queues</a>',
@@ -153,6 +155,7 @@ var resources = {
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-6-1" target="_blank">Mean, Variance, and Standard Deviation</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-8-1" target="_blank">Median, Covariance, and Correlation</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-13-2" target="_blank">Normalization and Distance Metrics</a>',
+      'todo: discrete probability distributions, continuous probability distributions, KL divergence, joint distributions, marginal distributions'
       ]},
     7: {'summary': [
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-9-1" target="_blank">Selection Sort and Bubble Sort</a>',
@@ -209,7 +212,32 @@ var resources = {
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-24-2" target="_blank">Refactoring space-empires</a>',
       ]},
       13: {'summary': [
+      'todo: svm + kernel trick, single-layer neural network, neuroevolution, backpropagation, multilayer neural network, dropout',
+      ]},
+      14: {'summary': [
+      'todo: decision tree, MARS, ID3 & CART, random forests, adaboost & gradient boosting',
+      ]},
+      15: {'summary': [
+      'todo: knn, kmeans, dbscan, t-sne, pca, ica, em (gmm), hierarchical clustering',
+      ]},
+      16: {'summary': [
+      "todo: Bayes' theorem, naive bayes, posterior distributions, maximum likelihood estimation",
+      ]},
+      18: {'summary': [
+      "todo: graphs / dags / weights, Dijskra's algorithm, A* search, minimum spanning tree, Prim's algorithm, Kruskal's algorithm, Tarjan's algorithm"
+      ]},
+      19: {'summary': [
+      "todo: evolutionary algorithms, genetic algorithms"
+      ]},
+      20: {'summary': [
+      "todo: convolutional neural networks, autoencoders, RBMs, deep belief networks"
+      ]},
+      21: {'summary': [
+      "todo: MDPs, Bellman Equation, Policy Iterat, Value Iteration, TD learning, On-Policy TD Learning (SARSA), Off-Policy TD Learning (Q-Learning), TD-lambda,"
+      ]},
+      22: {'summary': [
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-22-4" target="_blank">AlphaStar Video</a>',
+      "todo: ...",
       ]},
 }
 
@@ -242,7 +270,7 @@ var properties = {
   6: {
     course: 1,
     prerequisites: [1],
-    title: "Statistics"
+    title: "Elementary Statistics"
   },
   7: {
     course: 1,
@@ -275,9 +303,49 @@ var properties = {
     title: "space-empires Library"
   },
   13: {
+    course: 2,
+    prerequisites: [11,18,19],
+    title: "Neural Networks"
+  },
+  14: {
+    course: 2,
+    prerequisites: [11],
+    title: "Random Forests"
+  },
+  15: {
+    course: 2,
+    prerequisites: [18,16,11],
+    title: "Clustering & Dimensionality Reduction"
+  },
+  16: {
     course: 1,
-    prerequisites: [8],
-    title: "Reinforcement Learning Research"
+    prerequisites: [6],
+    title: "Bayesian Statistics"
+  },
+  18: {
+    course: 1,
+    prerequisites: [3],
+    title: "Graphs"
+  },
+  19: {
+    course: 1,
+    prerequisites: [5],
+    title: "Evolutionary Algorithms"
+  },
+  20: {
+    course: 2,
+    prerequisites: [13],
+    title: "Deep Neural Networks"
+  },
+  21: {
+    course: 2,
+    prerequisites: [18],
+    title: "Reinforcement Learning"
+  },
+  22: {
+    course: 2,
+    prerequisites: [21,20],
+    title: "Deep Reinforcement Learning"
   },
 }
 
