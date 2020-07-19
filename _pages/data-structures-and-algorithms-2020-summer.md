@@ -28,7 +28,7 @@ author_profile: false
 
 <div style="width:100%; max-width:800px; margin:auto">  
     
-<b>Assignments</b>
+<p><b>Assignments</b></p>
 
 <p>See <a class="body" target="_blank" href="https://eurisko-us.github.io/files/assignment_graph_iteration_1.html">here</a> for a visual layout.</p>
 
