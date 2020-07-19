@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+  * { 
+    margin:0;
+  }
+  p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+  html {
+    height: 100%;
+  }
+  body {
+    height: 100%;
+  }
+  #container {
+    height: 100%;
+    width: 100%;
+    float: left;
+  }
+  #infoPanel {
+    height: 100%;
+    width: 33%; // 0%;
+    float: left;
+    background: #add6ff;
+    overflow: scroll;
+    box-sizing: border-box;
+    border-right: 1px solid black;
+    padding: 15px; // 0px;
+  }
+  #infoPanel-title {
+    font-family: Verdana;
+    font-size: 150%;
+    padding-top: 12px;
+    text-align: center;
+    padding-bottom: 12px;
+  }
+  #infoPanel-summary {
+    font-family: Trebuchet MS;
+    font-size: 100%;
+    padding-top: 6px;
+    padding-bottom: 3px;
+    border-top: 1px solid black;
+    // border-bottom: 1px solid black;
+  }
+  
+  #graph {
+    height: 100%;
+    width: 67%; // 99%;
+    float: right;
+    background: white;
+  }
+  #graph svg {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://unpkg.com/viz.js@1.8.0/viz.js" type="javascript/worker"></script>
+<script src="https://unpkg.com/d3-graphviz@1.3.1/build/d3-graphviz.min.js"></script>
+
+<body>
+
+<div id="container">
+  <div id="infoPanel">
+    <div id="infoPanel-title">Eurisko Assignments</div>
+    <div id="infoPanel-summary"><p>
+    Click on a topic to see assignment problems.
+    </p></div>
+  </div>
+  <div id="graph"></div>
+</div>
+
+</body>
+
+<script>
+
+/////////////////////
+/* UNDERLYING DATA */
+/////////////////////
+
+lightPurple = '#f0c9ff'
+lightGreen = '#bdffc8'
+lightBlue = '#c9e4ff'
+lightRed = '#ffdbdb'
+lightOrange = '#ffe19c'
+lightTeal = '#b0fff6'
+lightOlive = '#ddff9f'
+
+var courses = {
+1: {'title': 'Data Structures & Algorithms', 'color': lightBlue},
+}
+
+var resources = {
+    1: {'summary': [
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-1-1" target="_blank">Converting Between Letters and Numbers</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-1-2" target="_blank">Checking a String for Symmetry</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-1-3" target="_blank">Converting Between Decimal and Binary</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-1-4" target="_blank">Checking if a Number is Prime</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-2-1" target="_blank">Intersection and Union</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-2-2" target="_blank">Counting Characters in a String</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-3-2" target="_blank">Converting Between Flat and Nested Dictionaries</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-4-1" target="_blank">List and Dictionary Comprehensions</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-7-1" target="_blank">Logic Within List Comprehensions</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-8-2" target="_blank">Untangling a Nested List Comprehension</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-12-1" target="_blank">Huffman Compression</a>',
+      ]},
+    2: {'summary': [
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-2-3" target="_blank">Matrix Arithmetic</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-3-3" target="_blank">Generalizing the Matrix Class to M x N Matrices</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-4-4" target="_blank">Refactoring and Overloading Operators in the Matrix Class</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-5-3" target="_blank">Row Reduction Helper Methods</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-6-4" target="_blank">Reduced Row Echelon Form for Matrices that Reduce to the Identity Matrix</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-7-4" target="_blank">Reduced Row Echelon Form for Matrices that Do Not Reduce to the Identity Matrix</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-8-5" target="_blank">Inverse of a Matrix Using Gaussian Elimination</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-9-4" target="_blank">Determinant via Reduced Row Echelon Form</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-10-4" target="_blank">Recursive Determinant</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-11-4" target="_blank">Inverse by Minors</a>',
+      ]},
+    3: {'summary': [
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-3-1" target="_blank">Stacks and Queues</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-8-4" target="_blank">Singly Linked List</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-9-2" target="_blank">Singly Linked List Methods</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-10-1" target="_blank">Doubly Linked List</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-12-2" target="_blank">Building a Binary Tree by Repeatedly Appending</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-13-1" target="_blank">Building a Binary Tree from an Edge List</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-15-1" target="_blank">Depth-First Search in a Binary Tree</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-16-2" target="_blank">Breadth-First Search in a Binary Tree</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-17-2" target="_blank">Heapifying an Array</a>',
+      ]},
+    4: {'summary': [
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-3-4" target="_blank">Brute-Force Decryption</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-4-2" target="_blank">Big-O Notation</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-4-3" target="_blank">Recursive Sequences</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-7-2" target="_blank">Factorial and Unlisting, Iteratively and Recursively</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-8-3" target="_blank">Counting Iterations of a Recursive Function</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-5-2" target="_blank">Finding Roots via Bisection Search</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-6-3" target="_blank">Finding Roots via Newton-Rhapson Search</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-11-1" target="_blank">Timing Code</a>',
+      ]},
+    5: {'summary': [
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-5-0" target="_blank">Plotting Line Segments</a> / <a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-5-1" target="_blank">Inheritance with Shape Classes</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-6-2" target="_blank">Identifying Is-a / Has-a Relationships Given a Class Hierarchy</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-7-3" target="_blank">Implementing a Class Hierarchy Given Is-a / Has-a Relationships</a>',
+      ]},
+    6: {'summary': [
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-6-1" target="_blank">Mean, Variance, and Standard Deviation</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-8-1" target="_blank">Median, Covariance, and Correlation</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-13-2" target="_blank">Normalization and Distance Metrics</a>',
+      ]},
+    7: {'summary': [
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-9-1" target="_blank">Selection Sort and Bubble Sort</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-10-2" target="_blank">Histogram (Counting) Sort and Insertion Sort</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-11-2" target="_blank">Shell Sort</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-18-2" target="_blank">Heapsort</a>',
+      ]},
+    8: {'summary': [
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-9-3" target="_blank">Game on a Grid</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-10-3" target="_blank">Class Architecture for Space Empires</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-11-3" target="_blank">Rendering the Game Board</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-12-3" target="_blank">Space Empires - Attack/Defense Technology</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-13-3" target="_blank">Space Empires - Armor / Movement</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-14-3" target="_blank">Space Empires - Speed Technology & Unit Building</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-15-3" target="_blank">Space Empires - Maintenance Costs & Group Combat</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-16-3" target="_blank">Space Empires - Colonies & Planets</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-17-3" target="_blank">Space Empires - Ship Yards</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-18-3" target="_blank">Space Empires - Final Features in Version 1</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-19-3" target="_blank">Space Empires - 3-Phase Turns</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-20-2" target="_blank">Space Empires - 3-Round Movement</a>',
+      ]},
+    9: {'summary': [
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-12-4" target="_blank">Single-Variable Gradient Descent</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-12-4" target="_blank">2-Variable Gradient Descent</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-15-2" target="_blank">Linear Regression via Gradient Descent</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-16-1" target="_blank">Grid Searching for the Best Linear Regression Coefficients via Gradient Descent</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-17-1" target="_blank">Quadratic Regression via Gradient Descent</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-18-1" target="_blank">GradientDescent Class</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-19-1" target="_blank">Generalizing GradientDescent to Functions with Any Number of Arguments</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-20-1" target="_blank">Assert Statements and GradientDescent Tests</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-1" target="_blank">Cartesian Product</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-2" target="_blank">GradientDescent Tests Output Format; Generalizing Grid Search to Any Number of Parameters</a>',
+      ]},
+    10: {'summary': [
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-14-2" target="_blank">Linear Regression via the Pseudoinverse</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-17-1" target="_blank">Quadratic Regression via the Pseudoinverse</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-18-1" target="_blank">PolynomialRegressor Class</a>',
+      ]},
+     11: {'summary': [
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-19-1" target="_blank">Structure for machine-learning Library</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-0" target="_blank">Library Structure and Naming Conventions</a>',
+      ]},
+     12: {'summary': [
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-19-1" target="_blank">Structure for space-empires Library</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-0" target="_blank">Library Structure and Naming Conventions</a>',
+      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-3" target="_blank">Space Empires - Board Class</a>',
+      ]},
+}
+
+var properties = {
+  1: {
+    course: 1,
+    prerequisites: [],
+    title: "Python Exercises"
+  },
+  2: {
+    course: 1,
+    prerequisites: [4],
+    title: "Matrix Class"
+  },
+  3: {
+    course: 1,
+    prerequisites: [4],
+    title: "Elementary Data Structures"
+  },
+  4: {
+    course: 1,
+    prerequisites: [1],
+    title: "Elementary Search & Recursion"
+  },
+  5: {
+    course: 1,
+    prerequisites: [2],
+    title: "Inheritance"
+  },
+  6: {
+    course: 1,
+    prerequisites: [1],
+    title: "Statistics"
+  },
+  7: {
+    course: 1,
+    prerequisites: [3],
+    title: "Sorting Algorithms"
+  },
+  8: {
+    course: 1,
+    prerequisites: [5],
+    title: "Space Empires - Game Engine"
+  },
+  9: {
+    course: 1,
+    prerequisites: [10],
+    title: "GradientDescent Class"
+  },
+  10: {
+    course: 1,
+    prerequisites: [2],
+    title: "PolynomialRegressor Class"
+  },
+  11: {
+    course: 1,
+    prerequisites: [9],
+    title: "machine-learning Library"
+  },
+  12: {
+    course: 1,
+    prerequisites: [8],
+    title: "space-empires Library"
+  },
+}
+
+////////////////////
+/* TEXT UTILITIES */
+////////////////////
+
+function replaceAll(string, original, replacement) {
+		prevString = string
+    newString = string.replace(original, replacement)
+    while(prevString != newString) {
+    		prevString = newString
+        newString = newString.replace(original, replacement)
+    }
+    return newString
+}
+
+function breakupText(text, charsPerLine=20, leeway=5) {
+  words = text.split(' ')
+  result = ''
+  counter = 0
+  for(i=0; i<words.length; i++) {
+  	word = words[i]
+    if(counter + word.length <= charsPerLine) {
+    	result += word+' '
+      counter += word.length+1
+    } else if(counter <= charsPerLine-leeway && counter+word.length <= charsPerLine+leeway) {
+    	result += word+'\\n'
+      counter = 0
+    } else {
+    	result += '\\n'+word+' '
+      counter = word.length
+    }
+  }
+  result = replaceAll(result, ' \\n', '\\n')
+  return result.trim()
+}
+
+/////////////////
+/* DOT MARKUP */
+////////////////
+
+function updateDotStyle(nodeId, key, val, which='node') {
+	dotStyle[nodeId][which][key] = val 
+}
+
+function resetDotStyle() {
+  for(var nodeId in properties) {
+    title = properties[nodeId]['title']
+    courseId = properties[nodeId]['course']
+    dotStyle[nodeId] = {'node':{}, 'edges':{}}
+    updateDotStyle(nodeId, 'label', breakupText(title), which='node')
+    updateDotStyle(nodeId, 'color', 'black', which='node')
+    updateDotStyle(nodeId, 'fillcolor', courses[courseId]['color'], which='node')
+  }
+}
+
+function styleDot(dotUnstyled, dotStyle) {
+		lines = []
+    for(var nodeId in properties) {
+    	prerequisites = properties[nodeId]['prerequisites']
+    	line = '{'+prerequisites.join(';')+'} -> '+nodeId
+      edgeAttr = dotStyle[nodeId]['edges']
+      for(var attr in edgeAttr) {
+          val = edgeAttr[attr]
+          line += ' ['+attr+'="'+val+'"]'
+        }
+      lines.push(line)
+     }
+    
+    for(var nodeId in dotStyle) {
+        line = nodeId
+        nodeAttr = dotStyle[nodeId]['node']
+        for(var attr in nodeAttr) {
+          val = nodeAttr[attr]
+          line += ' ['+attr+'="'+val+'"]'
+        }
+        lines.push(line)
+    }
+    dot = dotUnstyled.substring(0, dotUnstyled.length - 2)
+    dot += '\n\n'
+    dot += lines.join('\n')
+    dot += '\n}\n'
+    return dot
+}
+
+var dotStyle = {}
+resetDotStyle()
+
+var dotUnstyled = `
+digraph {
+node [style="filled"] [width=0] [fontcolor=black] [fontsize=20] [fontname="helvetica-bold"] [fixedsize=false] [fillcolor="#e3e3e3"] [color=black] [penwidth=0]
+edge [arrowsize=2.5] [penwidth=1.01]
+rankdir=BT;
+`; // penwidth=1.01 is necessary for the edges to go back to that original size when rendering. for some reason it doesn't update correctly when pendwith=1. (weird!)
+
+var dot = styleDot(dotUnstyled,dotStyle)
+
+///////////////////////
+/* DISPLAY UTILITIES */
+///////////////////////
+
+function updateInfoPanel(nodeId) {
+courseId = properties[nodeId]['course']
+  courseColor = courses[courseId]['color']
+  document.getElementById('infoPanel').style.background = courseColor
+  
+  label = dotStyle[nodeId]['node']['label']
+  label = replaceAll(label,'\\n',' ')
+  document.getElementById('infoPanel-title').innerHTML=label;
+  
+  nodeResources = resources[nodeId]
+  
+  if(nodeResources){
+      summary = nodeResources['summary']
+  } else {
+  		summary = 'Nothing here yet!'
+  }
+  
+  if(summary){
+      summaryHTML = summary.join('</p><hr><p>')
+      summaryHTML = '<p>'+summaryHTML+'</p>'
+  } else {
+  		summaryHTML = ''
+  }
+  
+  document.getElementById('infoPanel-summary').innerHTML = summaryHTML
+  
+  MathJax.Hub.Queue(["Typeset",MathJax.Hub,'infoPanel-summary']); // typeset any new mathjax | https://docs.mathjax.org/en/v1.0/typeset.html
+}
+
+function attributer(datum, index, nodes) {
+    margin = 20; // to avoid scrollbars
+    var selection = d3.select(this);
+    if (datum.tag == "svg") {
+        var width = window.innerWidth;
+        var height = window.innerHeight;
+        datum.attributes.width = width - margin;
+        datum.attributes.height = height - margin;
+    }
+}
+
+function resizeSVG() {
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    var svg = d3.select("#graph").selectWithoutDataPropagation("svg");
+    svg
+        .attr("width", width - 40)
+        .attr("height", height - 40);
+
+    var margin = 20; // to avoid scrollbars
+
+    var d = svg.datum();
+    d.attributes['width'] = width - margin;
+    d.attributes['height'] = height - margin;
+};
+
+///////////////////////////////
+/* RENDERING & INTERACTIVITY */
+///////////////////////////////
+
+var graphviz = d3.select("#graph").graphviz().attributer(attributer).logEvents(false);
+
+function render() {
+    graphviz
+        .transition(function() {
+            return d3.transition()
+                .delay(0)
+                .duration(0);
+        })
+        .renderDot(dot)
+        .on("end", interactive);
+}
+
+function interactive() {
+    nodes = d3.selectAll('.node');
+    nodes
+   			.on("click", onClick)
+}
+
+function onClick() {
+  var nodeId = d3.select(this).selectAll('title').text();
+  nodeId = parseInt(nodeId)
+  updateInfoPanel(nodeId)
+};
+
+//////////
+/* MAIN */
+//////////
+
+d3.select(window).on("resize", resizeSVG);
+render(dot);
+
+</script>
