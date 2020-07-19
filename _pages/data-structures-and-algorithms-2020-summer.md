@@ -33,6 +33,30 @@ author_profile: false
 <font size="3em"><ol reversed>
     <li>
         <ul>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-24-1">Overfitting</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-24-2">Refactoring machine-learning and space-empires</a></li>
+        </ul>
+    </li>
+    <br>
+    <li>
+        <ul>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-23-1">Matrix Tests</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-23-2">MergeSort</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-23-3">DumbPlayer Tests</a></li>
+        </ul>
+    </li>
+    <br>
+    <li>
+        <ul>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-22-1">PolynomialRegressor Tests</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-22-2">Merging Two Sorted Arrays</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-22-3">Space Empires - RandomPlayer and DumbPlayer</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-22-4">AlphaStar Video</a></li>
+        </ul>
+    </li>
+    <br>
+    <li>
+        <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-0">Library Structure and Naming Conventions</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-1">Cartesian Product</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-2">GradientDescent Tests Output Format; Generalizing Grid Search to Any Number of Parameters</a></li>
