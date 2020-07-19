@@ -17265,6 +17265,497 @@ DESIRED: [0.0020000000000000018, -0.0030001000000000055, 0.004000400000000004]</
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Problem-22-1">Problem 22-1<a class="anchor-link" href="#Problem-22-1">&#182;</a></h1><p>(ML; 30 min)</p>
+<p>Create a file <code>tests/test_polynomial_regressor.py</code> to test your <code>PolynomialRegressor</code> on the following tests. <strong>(Round the comparisons to 6 decimal places.)</strong></p>
+
+<pre><code>from polynomial_regressor import PolynomialRegressor
+data = [(0,1), (1,2), (2,5), (3,10), (4,20), (5,30)]
+
+constant_regressor = PolynomialRegressor(degree=0)
+constant_regressor.ingest_data(data)
+constant_regressor.solve_coefficients()
+constant_regressor.coefficients
+[11.333333333333332]
+constant_regressor.evaluate(2)
+11.333333333333332
+
+linear_regressor = PolynomialRegressor(degree=1)
+linear_regressor.ingest_data(data)
+linear_regressor.solve_coefficients()
+linear_regressor.coefficients
+[-3.2380952380952412, 5.828571428571428]
+linear_regressor.evaluate(2)
+8.419047619047616
+
+quadratic_regressor = PolynomialRegressor(degree=2)
+quadratic_regressor.ingest_data(data)
+quadratic_regressor.solve_coefficients()
+quadratic_regressor.coefficients
+[1.107142857142763, -0.6892857142856474, 1.3035714285714226]
+quadratic_regressor.evaluate(2)
+4.942857142857159
+
+cubic_regressor = PolynomialRegressor(degree=3)
+cubic_regressor.ingest_data(data)
+cubic_regressor.solve_coefficients()
+cubic_regressor.coefficients
+[1.1349206349217873, -0.8161375661377197, 1.3730158730155861, -0.009259259259233155]
+cubic_regressor.evaluate(2)
+4.920634920634827
+
+fifth_degree_regressor = PolynomialRegressor(degree=5)
+fifth_degree_regressor.ingest_data(data)
+fifth_degree_regressor.solve_coefficients()
+fifth_degree_regressor.coefficients
+[0.9999999917480108, -2.950000002085698, 6.9583333345161265, -3.9583333337779045, 1.0416666667658463, -0.09166666667401097]
+fifth_degree_regressor.evaluate(2)
+4.999999990103076</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Problem-22-2">Problem 22-2<a class="anchor-link" href="#Problem-22-2">&#182;</a></h1><p>(DS/Algo; 30 min)</p>
+<p>a) Make a new repository <code>assignment-problems</code>. Going forward, this repository will hold any miscellaneous functions you write in assignments.</p>
+<p>b) Write a function <code>combine_sorted_lists(x,y)</code> that combines two sorted lists <code>x</code> and <code>y</code> so that the result itself is also sorted. You should build up the output list by going through <code>x</code> and <code>y</code> in parallel, and repeatedly taking the smallest value.</p>
+<ul>
+<li><strong>IMPORTANT CLARIFICATION: You should not be mutating the underlying lists.</strong> During the example in class, we removed items from <code>x</code> and <code>y</code> and put them in a new list, but you shouldn't actually remove anything from <code>x</code> and <code>y</code>. Rather, you should just loop through each list in parallel, keeping track of your indices in <code>x</code> and <code>y</code>, and repeatedly bring a copy of the smallest element into the output list.</li>
+</ul>
+
+<pre><code>&gt;&gt;&gt; combine_sorted_lists([1,3,4,5,7],[2,6])
+[1,2,3,4,5,6,7]</code></pre>
+<p>c) Put your function in a file <code>combine_sorted_lists.py</code>. <strong>Then, create a file <code>test_combine_sorted_lists.py</code> that runs $4$ tests on the function you wrote.</strong></p>
+<ul>
+<li>Be sure to consider a variety of test cases. In particular, make sure your code works on edge-cases, such as when list items are repeated.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Problem-22-3">Problem 22-3<a class="anchor-link" href="#Problem-22-3">&#182;</a></h1><p>(SWE; 90 min)</p>
+<p>a) Create a new class <code>RandomPlayer</code> that inherits from <code>Player</code>. Then, take any methods in <code>Player</code> for which random strategy is currently used, and move them to <code>RandomPlayer</code>.</p>
+<ul>
+<li>Such methods include <code>move</code>, <code>build_fleet</code>, etc.</li>
+</ul>
+<p>b) Create another class <code>DumbPlayer</code> that has the same format as <code>RandomPlayer</code>, but that uses the following strategy:</p>
+<ul>
+<li><p>Only spend money on scouts. Always build as many scouts as possible, and don't ever buy anything else (not even technology).</p>
+</li>
+<li><p>Always move ships to the right.</p>
+</li>
+</ul>
+<p>c) Put the player class files in a folder <code>player/</code> that is analogous to the <code>unit/</code> folder. So, you should have</p>
+
+<pre><code>src/
+|- player/
+.  |- player.py
+.  |- random_player.py
+.  |- dumb_player.py</code></pre>
+<p>d) Check to see what happens when two <code>DumbPlayer</code>s play the game. You should have a bunch of scouts collect on the right.</p>
+<p>e) Check to see what happens when a <code>RandomPlayer</code> plays against a <code>DumbPlayer</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Problem-22-4">Problem 22-4<a class="anchor-link" href="#Problem-22-4">&#182;</a></h1><p>(Journal Club; 30 min)</p>
+<p>Watch <a href="https://www.youtube.com/watch?v=lPERfjRaZug">this video on AlphaStar</a>, and think about the following questions. We'll discuss them in class next time, and I'm going to expect everyone to have a thought-out response to each of these questions! (Feel free to watch at higher speed, if you're able to process the information to answer the questions below.)</p>
+<ul>
+<li><p>What is deep learning, what is reinforcement learning, and how does AlphaStar integrate them?</p>
+</li>
+<li><p>What are main agents and exploiter agents? How are they different, and why are exploiter agents used?</p>
+</li>
+<li><p>How did AlphaStar perform? Was it better than half of the human players? Better than 9 out of 10 human players? Better than that?</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Problem-23-1">Problem 23-1<a class="anchor-link" href="#Problem-23-1">&#182;</a></h1><p>(DS/Algo; 60 min)</p>
+<p>Create a testing file <code>tests/test_matrix.py</code> that tests your matrix methods</p>
+<ul>
+<li><p>1 test for each arithmetic operation: addition, subtraction, scalar multiplication, matrix multiplication, transpose.</p>
+</li>
+<li><p>6 tests for reduced row echelon form. You should test all combinations of the following cases:</p>
+<ol>
+<li>a a square matrix, a tall rectangular matrix, and a wide rectangular matrix; </li>
+<li>has the maximum number of possible pivots (i.e. no pivot disappears); has fewer than the maximum number of pivots (i.e. some pivot disappears)</li>
+</ol>
+</li>
+<li><p>3 tests for each of inverse, inverse by minors, determinant, and recursive determinant (so, 12 tests in all).</p>
+<ol>
+<li>the case when the matrix is invertible</li>
+<li>the case when the matrix is not invertible due to having dependent rows</li>
+<li>the case when the matrix is not invertible due to not being square</li>
+</ol>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Problem-23-2">Problem 23-2<a class="anchor-link" href="#Problem-23-2">&#182;</a></h1><p>(DS/Algo; 45 min)</p>
+<p>Write a recursive function <code>divide_and_conquer_sort(x)</code> that sorts an input list <code>x</code> according to the following technique:</p>
+<blockquote><p>If the input list consist of more than one element, then split the list into the first half and the second half, recursively use <code>divide_and_conquer_sort</code> to sort each half, combine the two sorted halves, and return the result. Otherwise, if the input list consists of only one element, then the input list is already sorted and you can return it.</p>
+</blockquote>
+<p><strong>Put your function in <code>assignment-problems</code> and create a testing file that implements 4 tests, each of which are significantly different in some way.</strong></p>
+<p><strong>HERE IS SOME PSEUDOCODE TO HELP YOU STRUCTURE YOUR FUNCTION:</strong></p>
+
+<pre><code>divide_and_conquer_sort(input list):
+    if the input list consists of more than one element:
+        break up the input list into its left and right halves
+        sort the left and right halves by recursively calling divide_and_conquer_sort
+        combine the two sorted halves
+        return the result
+    otherwise, if the input list consists of only one element, then it is already sorted,
+        and you can just return it.</code></pre>
+<p><strong>And here is an example of what's going on under the hood:</strong></p>
+
+<pre><code>input list:[6,9,7,4,2,1,8,5]
+break it in half: [6,9,7,4] [2,1,8,5]
+use divide_and_conquer_sort recursively to sort the two halves
+
+    input list: [6,9,7,4]
+    break it in half: [6,9] [7,4]
+    use divide_and_conquer_sort recursively to sort the two halves
+
+        input list: [6,9]
+        break it in half: [6] [9]
+        the two halves have only one element each, so they are already sorted
+        so we can combine them to get [6,9]
+
+        input list: [7,4]
+        break it in half: [7] [4]
+        the two halves have only one element each, so they are already sorted
+        so we can combine them to get [4,7]
+
+    now we have two sorted lists [6,9] and [4,7]
+    so we can combine them to get [4,6,7,9]
+
+    input list: [2,1,8,5]
+    break it in half: [2,1] [8,5]
+    use divide_and_conquer_sort recursively to sort the two halves
+
+        input list: [2,1]
+        break it in half: [2] [1]
+        the two halves have only one element each, so they are already sorted
+        so we can combine them to get [1,2]
+
+        input list: [8,5]
+        break it in half: [8] [5]
+        the two halves have only one element each, so they are already sorted
+        so we can combine them to get [5,8]
+
+    now we have two sorted lists [1,2] and [5,8]
+    so we can combine them to get [1,2,5,8]
+
+now we have two sorted lists [4,6,7,9] and [1,2,5,8]
+so we can combine them to get [1,2,4,5,6,7,8,9]</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Problem-23-3">Problem 23-3<a class="anchor-link" href="#Problem-23-3">&#182;</a></h1><p>(SWE; 90 min)</p>
+<p>Write a testing file <code>tests/test_dumb_player.py</code> to ensure that a game on a $5 \times 5$ grid with two <code>DumbPlayer</code>s proceeds correctly.</p>
+<p><strong>Over the course of 4 turns, you should check the board for the following 8 tests:</strong></p>
+<ol>
+<li><p>At the end of Turn 1 Movement Phase:</p>
+<ul>
+<li>Player 1 has 3 scouts at (4,0)</li>
+<li>Player 2 has 3 scouts at (4,4)</li>
+</ul>
+</li>
+<li><p>At the end of Turn 1 Economic Phase:</p>
+<ul>
+<li>Player 1 has 3 scouts at (4,0) and 3 scouts at (2,0)</li>
+<li>Player 2 has 3 scouts at (4,4) and 3 scouts at (2,4)</li>
+<li>Players 1/2 have 2 CPs each</li>
+</ul>
+</li>
+<li><p>At the end of Turn 2 Movement Phase:</p>
+<ul>
+<li>Player 1 has 6 scouts at (4,0)</li>
+<li>Player 2 has 6 scouts at (4,4)</li>
+</ul>
+</li>
+<li><p>At the end of Turn 2 Economic Phase:</p>
+<ul>
+<li>Player 1 has 5 scouts at (4,0)</li>
+<li>Player 2 has 5 scouts at (4,4)</li>
+<li>Players 1/2 have 0 CPs each</li>
+</ul>
+</li>
+<li><p>At the end of Turn 3 Movement Phase:</p>
+<ul>
+<li>Player 1 has 3 scouts at (4,0)</li>
+<li>Player 2 has 3 scouts at (4,4)</li>
+</ul>
+</li>
+<li><p>At the end of Turn 3 Economic Phase:</p>
+<ul>
+<li>Player 1 has 3 scouts at (4,0)</li>
+<li>Player 2 has 3 scouts at (4,4)</li>
+<li>Players 1/2 have 0 CPs each</li>
+</ul>
+</li>
+<li><p>At the end of Turn 4 Movement Phase:</p>
+<ul>
+<li>Player 1 has 3 scouts at (4,0)</li>
+<li>Player 2 has 3 scouts at (4,4)</li>
+</ul>
+</li>
+<li><p>At the end of Turn 4 Economic Phase:</p>
+<ul>
+<li>Player 1 has 3 scouts at (4,0)</li>
+<li>Player 2 has 3 scouts at (4,4)</li>
+<li>Players 1/2 have 0 CPs each</li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+<p>For your reference, here's my scratch work when figuring out the conditions above.</p>
+
+<pre><code>STARTING CONDITIONS
+
+Players 1 and 2
+    are DumbPlayers
+    start with 20 CPs
+    have an initial fleet of 3 scouts and 3 colony ships
+
+---
+
+TURN 1
+
+MOVEMENT PHASE
+
+Player 1, Movement 1
+    Scouts 1,2,3: (2,0) --&gt; (3,0)
+
+Player 2, Movement 1
+    Scouts 1,2,3: (2,4) --&gt; (3,4)
+
+Player 1, Movement 2
+    Scout 1,2,3: (3,0) --&gt; (4,0)
+
+Player 2, Movement 2
+    Scouts 1,2,3: (3,4) --&gt; (4,4)
+
+Players 1/2, Movement 3
+    no movements occur
+
+Player 1, Final Locations:
+    Scout 1: (4,0)
+    Scout 2: (4,0)
+    Scout 3: (4,0)
+
+Player 2, Final Locations:
+    Scout 1: (4,4)
+    Scout 2: (4,4)
+    Scout 3: (4,4)
+
+COMBAT PHASE
+
+no combats occur
+
+ECONOMIC PHASE
+
+Players 1/2
+    starting CP: 20
+    colony income: 3 CP/Colony x 1 Colony = 3 CP
+    maintenance costs: 1 CP/Scout x 3 Scouts = 3 CP
+    remaining CP: 20
+    buy scouts: 6 CP/Scout x 3 Scouts = 18 CP
+    remaining CP: 2
+
+---
+
+TURN 2
+
+MOVEMENT PHASE
+
+Player 1, Movement 1
+    Scouts 4,5,6: (2,0) --&gt; (3,0)
+
+Player 2, Movement 1
+    Scouts 4,5,6: (2,4) --&gt; (3,4)
+
+Player 1, Movement 2
+    Scout 4,5,6: (3,0) --&gt; (4,0)
+
+Player 2, Movement 2
+    Scouts 4,5,6: (3,4) --&gt; (4,4)
+
+Players 1/2, Movement 3
+    no movements occur
+
+Player 1, Final Locations:
+    Scout 1: (4,0)
+    Scout 2: (4,0)
+    Scout 3: (4,0)
+    Scout 4: (4,0)
+    Scout 5: (4,0)
+    Scout 6: (4,0)
+
+Player 2, Final Locations:
+    Scout 1: (4,4)
+    Scout 2: (4,4)
+    Scout 3: (4,4)
+    Scout 4: (4,4)
+    Scout 5: (4,4)
+    Scout 6: (4,4)
+
+COMBAT PHASE
+
+no combats occur
+
+ECONOMIC PHASE
+
+Players 1/2
+    starting CP: 2
+    colony income: 3 CP/Colony x 1 Colony = 3 CP
+    maintenance costs: 1 CP/Scout x 6 Scouts = 6 CP
+    unable to maintain Scout 6; Scout 6 is removed
+    remaining CP: 0
+
+---
+
+TURN 3
+
+MOVEMENT PHASE
+
+Players 1/2, Movements 1/2/3
+    no movements occur
+
+Player 1, Final Locations:
+    Scout 1: (4,0)
+    Scout 2: (4,0)
+    Scout 3: (4,0)
+    Scout 4: (4,0)
+    Scout 5: (4,0)
+
+Player 2, Final Locations:
+    Scout 1: (4,4)
+    Scout 2: (4,4)
+    Scout 3: (4,4)
+    Scout 4: (4,4)
+    Scout 5: (4,4)
+
+COMBAT PHASE
+
+no combats occur
+
+ECONOMIC PHASE
+
+Players 1/2
+    starting CP: 0
+    colony income: 3 CP/Colony x 1 Colony = 3 CP
+    maintenance costs: 1 CP/Scout x 5 Scouts = 5 CP
+    unable to maintain Scouts 4/5; Scouts 4/5 are removed
+    remaining CP: 0
+
+---
+
+TURN 3
+
+MOVEMENT PHASE
+
+Players 1/2, Movements 1/2/3
+    no movements occur
+
+Player 1, Final Locations:
+    Scout 1: (4,0)
+    Scout 2: (4,0)
+    Scout 3: (4,0)
+
+Player 2, Final Locations:
+    Scout 1: (4,4)
+    Scout 2: (4,4)
+    Scout 3: (4,4)
+
+COMBAT PHASE
+
+no combats occur
+
+ECONOMIC PHASE
+
+Players 1/2
+    starting CP: 0
+    colony income: 3 CP/Colony x 1 Colony = 3 CP
+    maintenance costs: 3 CP/Scout x 3 Scouts = 3 CP
+    remaining CP: 0
+
+---
+
+all future turns continue the same way as TURN 3</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Problem-24-1">Problem 24-1<a class="anchor-link" href="#Problem-24-1">&#182;</a></h1><p>(ML; 30 min)</p>
+<p><strong>For this problem, make a file <code>machine-learning/analysis/rocket_takeoff_regression.py</code> and put your code there.</strong></p>
+<p>Recall the following dataset, which represents the distance between a rocket and Earth's surface, as the rocket takes off. The data points are given in the form <code>(time, distance)</code>.</p>
+
+<pre><code>data = [(1, 3.1), (2, 10.17), (3, 20.93), (4, 38.71), (5, 60.91), (6, 98.87), (7, 113.92), (8, 146.95), (9, 190.09), (10, 232.65)]</code></pre>
+<p>a) Using your <code>PolynomialRegression</code> class, fit a quadratic to the data:</p>
+$$y = \beta_0 + \beta_1 t + \beta_2 t^2$$<p>According to the quadratic, what is the predicted position of the rocket after 200 seconds? <strong>Make <code>rocket_takeoff_regression.py</code> print out your answer.</strong></p>
+<p>b) Your friend claims that a cubic model will better fit the data. So, using your <code>PolynomialRegression</code> class, fit a cubic to the data:</p>
+$$y = \beta_0 + \beta_1 x + \beta_2 x^2 + \beta_3 x^3$$<p>According to the quadratic, what is the predicted position of the rocket after 200 seconds? <strong>Make <code>rocket_takeoff_regression.py</code> print out your answer.</strong></p>
+<p>c) Which model is better, the quadratic or the cubic? Justify your answer. <strong>Write your answer as a comment in <code>rocket_takeoff_regression.py</code></strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Problem-24-2">Problem 24-2<a class="anchor-link" href="#Problem-24-2">&#182;</a></h1><p>(SWE; 180 min)</p>
+<p><strong>Catch up:</strong> Make sure your tests for <code>machine-learning/test/test_matrix.py</code> and <code>space-empires/src/test_dumb_player.py</code> are working and complete.</p>
+<ul>
+<li>Make sure that your <code>DumbPlayer</code> test is using assert statements to check the relevant aspects of the game. You should NOT just print out the logging data and compare it visually. Rather, for each test, you should print out what you're testing for and whether the test passed.</li>
+</ul>
+<p><strong>Naming conventions:</strong></p>
+<ul>
+<li><p>Make sure all your files are named properly, using snake_case and correct grammar.</p>
+</li>
+<li><p>Make sure all your classes are named as nouns and all your methods/functions are named as verbs. This includes past files as well.</p>
+</li>
+</ul>
+<p><strong>Refactoring:</strong> Resolve all the high-priority issues on your <a href="https://docs.google.com/spreadsheets/d/1LktrKUE1FW9qiV0tDG8XAspDxXTSUsbeZYet7dvrBgw/edit?usp=sharing">refactoring list</a>.</p>
+<p><strong>NOTE: There's really not much else on this assignment, so I'm expecting you to get <em>all</em> of the above done over the weekend. If you run into any prolonged trouble, please make a post on Discord! If you find yourself not making progress on an issue for 30 min or more, just make a post for help and move onto another thing.</strong></p>
+
+</div>
+</div>
+</div>
     </div>
   </div>
 </body>
