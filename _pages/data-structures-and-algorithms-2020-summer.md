@@ -91,8 +91,7 @@ author_profile: false
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-14-1">Building a Binary Tree from an Edge List (redo)</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-14-2">Linear Regression via the Pseudoinverse</a></li>
-        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-14-3">Linear Regression via Gradient Descent</a></li>
-        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-14-4">Space Empires - Speed Technology & Unit Building</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-14-3">Space Empires - Speed Technology & Unit Building</a></li>
         </ul>
     </li>
     <br>
