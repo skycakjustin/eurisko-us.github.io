@@ -30,6 +30,8 @@ author_profile: false
     
 <b>Assignments</b>
 
+See <a class="body" target="_blank" href="https://eurisko-us.github.io/files/assignment_graph_iteration_1.html"><b>here</b></a> for a visual layout.
+
 <font size="3em"><ol reversed>
     <li>
         <ul>
