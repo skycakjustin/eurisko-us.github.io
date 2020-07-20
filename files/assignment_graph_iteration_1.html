@@ -21,13 +21,13 @@
   }
   #infoPanel {
     height: 100%;
-    width: 33%; // 0%;
+    width: 0%; // 33%; // 0%;
     float: left;
     background: #add6ff;
     overflow: scroll;
     box-sizing: border-box;
     border-right: 1px solid black;
-    padding: 15px; // 0px;
+    padding: 0px; // 15px; // 0px;
   }
   #infoPanel-title {
     font-family: Verdana;
@@ -42,12 +42,21 @@
     padding-top: 6px;
     padding-bottom: 3px;
     border-top: 1px solid black;
-    // border-bottom: 1px solid black;
+    border-bottom: 1px solid black;
   }
-  
+  #infoPanel-video {
+    max-width: 280px;
+    margin: 0 auto;
+    padding-top: 12px;
+    padding-bottom: 3px;
+  }
+  #infoPanel-readings, #infoPanel-exercises {
+    font-family: Trebuchet MS;
+    font-size: 120%;
+  }
   #graph {
     height: 100%;
-    width: 67%; // 99%;
+    width: 99%; // 67%; // 99%;
     float: right;
     background: white;
   }
@@ -68,10 +77,13 @@
 
 <div id="container">
   <div id="infoPanel">
-    <div id="infoPanel-title">Eurisko Assignments</div>
+    <div id="infoPanel-title">What Should I Learn Next?</div>
     <div id="infoPanel-summary"><p>
-    Click on a topic to see assignment problems.
+    Click on a topic to learn more.
     </p></div>
+    <div id="infoPanel-video"></div>
+    <div id="infoPanel-readings"></div>
+    <div id="infoPanel-exercises"></div>
   </div>
   <div id="graph"></div>
 </div>
@@ -84,6 +96,24 @@
 /* UNDERLYING DATA */
 /////////////////////
 
+var resources = {
+		1: {'summary': 'To <b>count</b> a quantity of objects, we use the symbols $1,$ $2,$ $3,$ and so on.',
+    		'readings': ['https://www.mathsisfun.com/numbers/counting-names-100.html', 'https://www.mathsisfun.com/numbers/counting-names-1000.html']},
+		2: {'summary': 'To <b>add</b> a number to another number, we count up.\nFor example, to add $3$ to the number $5$, we start at $5$ and count up $3$ more numbers. Counting up once, we reach $6.$ Then counting up again, we reach $7.$ Finally, counting up the third and final time, we reach $8.$ So $$3+5=8.$$',
+        'videos': ['UHmZHgcxp6k'],
+        'exercises': ['https://www.ipracticemath.com/math-practice/addition']},
+    3: {'summary': 'To <b>subtract</b> a number from another number, we count down.\nFor example, to subtract $3$ from the number $5,$ we start at $5$ and count down $3$ numbers. Counting down once, we reach $4.$ Then counting down again, we reach $3.$ Finally, counting down the third and final time, we reach $2.$ So $$5-2=3.$$\nWhen we count down past $0,$ we use negative numbers. So, for example, to compute $1-3,$ we start at $1$ and then count down $3$ times: $0,$ $-1,$ $-2.$ Therefore, $$1-3=-2.$$',
+        'videos': ['aNqG4ChKShI','OAoLCXpao6s'],
+        'exercises': ['https://www.mathworksheets4kids.com/test-practice/subtraction/index.php']},
+     4: {'summary': 'To <b>multiply</b> a number by another number, we repeatedly add.\nFor example, to multiply $2$ by $3,$ we add $3$ copies of $2$ together: $$2 \\times 3 = 2 + 2 + 2 = 6$$',
+        'videos': ['JzKTvNPzl6k','v1Ih3-mDPUk'],
+        'exercises': ['https://www.timestables.com/','https://www.mathsisfun.com/numbers/math-trainer-multiply.html']},
+     15: {'summary': "The <b>absolute value</b> of a number is it's distance from $0,$ and is denoted by surrounding the number with a pair of vertical bars: $|\\text{number}|.$\nThe absolute value of a positive number is just the number itself. For example, the absolute value of $3$ is just $3$ itself, since the distance between $0$ and $3$ is $3.$ So, we write $|3|=3.$\nOn the other hand, to take the absolute value of a negative number, we remove the negative sign. For example, the absolute value of $-3$ is $3$ because the distance between $0$ and $-3$ is $3.$ (Remember, distance is never negative.) So, we write $|{-3}|=3.$",
+        'videos': ['r6hS_8nm1jM', 'BrYy1bgh3Y0'],
+        'readings': ['https://www.mathsisfun.com/numbers/absolute-value.html'],
+        'exercises': ['']}
+}
+
 lightPurple = '#f0c9ff'
 lightGreen = '#bdffc8'
 lightBlue = '#c9e4ff'
@@ -93,243 +123,683 @@ lightTeal = '#b0fff6'
 lightOlive = '#ddff9f'
 
 var courses = {
-1: {'title': 'Data Structures & Algorithms', 'color': lightBlue},
-2: {'title': 'Machine Learning', 'color': lightGreen},
-3: {'title': 'Reinforcement Learning', 'color': lightRed},
-}
-
-var resources = {
-    1: {'summary': [
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-1-1" target="_blank">Converting Between Letters and Numbers</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-1-2" target="_blank">Checking a String for Symmetry</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-1-3" target="_blank">Converting Between Decimal and Binary</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-1-4" target="_blank">Checking if a Number is Prime</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-5-0" target="_blank">Plotting Line Segments</a> / <a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-5-1" target="_blank">Inheritance with Shape Classes</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-6-2" target="_blank">Identifying Is-a / Has-a Relationships Given a Class Hierarchy</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-7-3" target="_blank">Implementing a Class Hierarchy Given Is-a / Has-a Relationships</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-2-1" target="_blank">Intersection and Union</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-2-2" target="_blank">Counting Characters in a String</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-3-2" target="_blank">Converting Between Flat and Nested Dictionaries</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-4-1" target="_blank">List and Dictionary Comprehensions</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-7-1" target="_blank">Logic Within List Comprehensions</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-8-2" target="_blank">Untangling a Nested List Comprehension</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-12-1" target="_blank">Huffman Compression</a>',
-      ]},
-    2: {'summary': [
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-2-3" target="_blank">Matrix Arithmetic</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-3-3" target="_blank">Generalizing the Matrix Class to M x N Matrices</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-4-4" target="_blank">Refactoring and Overloading Operators in the Matrix Class</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-5-3" target="_blank">Row Reduction Helper Methods</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-6-4" target="_blank">Reduced Row Echelon Form for Matrices that Reduce to the Identity Matrix</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-7-4" target="_blank">Reduced Row Echelon Form for Matrices that Do Not Reduce to the Identity Matrix</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-8-5" target="_blank">Inverse of a Matrix Using Gaussian Elimination</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-9-4" target="_blank">Determinant via Reduced Row Echelon Form</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-10-4" target="_blank">Recursive Determinant</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-11-4" target="_blank">Inverse by Minors</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-23-1" target="_blank">Matrix Tests</a>',
-      'todo: theory behind eigenvectors, QR algorithm for computing eigenvalues'
-      ]},
-    3: {'summary': [
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-3-1" target="_blank">Stacks and Queues</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-8-4" target="_blank">Singly Linked List</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-9-2" target="_blank">Singly Linked List Methods</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-10-1" target="_blank">Doubly Linked List</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-12-2" target="_blank">Building a Binary Tree by Repeatedly Appending</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-13-1" target="_blank">Building a Binary Tree from an Edge List</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-15-1" target="_blank">Depth-First Search in a Binary Tree</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-16-2" target="_blank">Breadth-First Search in a Binary Tree</a>',
-      ]},
-    4: {'summary': [
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-3-4" target="_blank">Brute-Force Decryption</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-4-2" target="_blank">Big-O Notation</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-4-3" target="_blank">Recursive Sequences</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-7-2" target="_blank">Factorial and Unlisting, Iteratively and Recursively</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-8-3" target="_blank">Counting Iterations of a Recursive Function</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-5-2" target="_blank">Finding Roots via Bisection Search</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-6-3" target="_blank">Finding Roots via Newton-Rhapson Search</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-11-1" target="_blank">Timing Code</a>',
-      ]},
-    6: {'summary': [
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-6-1" target="_blank">Mean, Variance, and Standard Deviation</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-8-1" target="_blank">Median, Covariance, and Correlation</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-13-2" target="_blank">Normalization and Distance Metrics</a>',
-      'todo: discrete probability distributions, continuous probability distributions, KL divergence, joint distributions, marginal distributions',
-      "todo: Bayes' theorem, naive bayes, posterior distributions, maximum likelihood estimation",
-      ]},
-    7: {'summary': [
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-9-1" target="_blank">Selection Sort and Bubble Sort</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-10-2" target="_blank">Histogram (Counting) Sort and Insertion Sort</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-11-2" target="_blank">Shell Sort</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-17-2" target="_blank">Heapifying an Array</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-18-2" target="_blank">Heapsort</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-22-2" target="_blank">Merging Two Sorted Arrays</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-23-2" target="_blank">MergeSort</a>',
-      ]},
-    8: {'summary': [
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-9-3" target="_blank">Game on a Grid</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-10-3" target="_blank">Class Architecture for Space Empires</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-11-3" target="_blank">Rendering the Game Board</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-12-3" target="_blank">Space Empires - Attack/Defense Technology</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-13-3" target="_blank">Space Empires - Armor / Movement</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-14-3" target="_blank">Space Empires - Speed Technology & Unit Building</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-15-3" target="_blank">Space Empires - Maintenance Costs & Group Combat</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-16-3" target="_blank">Space Empires - Colonies & Planets</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-17-3" target="_blank">Space Empires - Ship Yards</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-18-3" target="_blank">Space Empires - Final Features in Version 1</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-19-3" target="_blank">Space Empires - 3-Phase Turns</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-20-2" target="_blank">Space Empires - 3-Round Movement</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-19-1" target="_blank">Structure for space-empires Library</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-0" target="_blank">Library Structure and Naming Conventions</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-3" target="_blank">Space Empires - Board Class</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-22-3" target="_blank">Space Empires - RandomPlayer and DumbPlayer</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-23-3" target="_blank">DumbPlayer Tests</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-24-2" target="_blank">Refactoring space-empires</a>',
-      ]},
-    9: {'summary': [
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-12-4" target="_blank">Single-Variable Gradient Descent</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-12-4" target="_blank">2-Variable Gradient Descent</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-15-2" target="_blank">Linear Regression via Gradient Descent</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-16-1" target="_blank">Grid Searching for the Best Linear Regression Coefficients via Gradient Descent</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-17-1" target="_blank">Quadratic Regression via Gradient Descent</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-18-1" target="_blank">GradientDescent Class</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-19-1" target="_blank">Generalizing GradientDescent to Functions with Any Number of Arguments</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-20-1" target="_blank">Assert Statements and GradientDescent Tests</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-1" target="_blank">Cartesian Product</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-2" target="_blank">GradientDescent Tests Output Format; Generalizing Grid Search to Any Number of Parameters</a>',
-      ]},
-    10: {'summary': [
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-14-2" target="_blank">Linear Regression via the Pseudoinverse</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-17-1" target="_blank">Quadratic Regression via the Pseudoinverse</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-18-1" target="_blank">PolynomialRegressor Class</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-22-1" target="_blank">PolynomialRegressor Tests</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-19-1" target="_blank">Structure for machine-learning Library</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-0" target="_blank">Library Structure and Naming Conventions</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-24-2" target="_blank">Refactoring machine-learning</a>',
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-24-1" target="_blank">Overfitting</a>',
-      'todo: multiple linear regression, interaction terms, logistic regression'
-      ]},
-      12: {'summary': [
-      'todo: ...',
-      ]},
-      13: {'summary': [
-      'todo: svm + kernel trick, single-layer neural network, neuroevolution, backpropagation, multilayer neural network, dropout',
-      ]},
-      14: {'summary': [
-      'todo: decision tree, MARS, ID3 & CART, random forests, adaboost & gradient boosting',
-      ]},
-      15: {'summary': [
-      'todo: knn, kmeans, dbscan, t-sne, pca, ica, em (gmm), hierarchical clustering',
-      ]},
-      18: {'summary': [
-      "todo: graphs / dags / weights, Dijskra's algorithm, A* search, minimum spanning tree, Prim's algorithm, Kruskal's algorithm, Tarjan's algorithm"
-      ]},
-      19: {'summary': [
-      "todo: evolutionary algorithms, genetic algorithms"
-      ]},
-      20: {'summary': [
-      "todo: convolutional neural networks, autoencoders, RBMs, deep belief networks"
-      ]},
-      21: {'summary': [
-      "todo: MDPs, Bellman Equation, Policy Iterat, Value Iteration, TD learning, On-Policy TD Learning (SARSA), Off-Policy TD Learning (Q-Learning), TD-lambda,"
-      ]},
-      22: {'summary': [
-      '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-22-4" target="_blank">AlphaStar Video</a>',
-      "todo: ...",
-      ]},
+0: {'title': 'Root', 'color': 'gray'},
+8: {'title': 'Linear Algebra', 'color': lightGreen},
+9: {'title': 'Differential Equations', 'color': lightBlue},
+10: {'title': 'Probability and Statistics', 'color': lightOrange},
+11: {'title': 'Multivariable Calculus', 'color': lightPurple},
+13: {'title': 'Data Structures & Algorithms', 'color': lightRed},
+14: {'title': 'Machine Learning', 'color': lightBlue}, // lightOlive
+15: {'title': 'Reinforcement Learning', 'color': lightTeal},
+16: {'title': 'Deep Learning', 'color': lightTeal},
 }
 
 var properties = {
-  1: {
-    course: 1,
+  0: {
+    course: 0,
     prerequisites: [],
-    title: "Python Exercises"
+    title: "AP Calculus BC"
   },
-  2: {
-    course: 1,
-    prerequisites: [4],
-    title: "Matrices"
+  1: {
+    course: 0,
+    prerequisites: [],
+    title: "Object-Oriented Programming"
   },
-  3: {
-    course: 1,
-    prerequisites: [4],
-    title: "Elementary Data Structures"
+  100: {
+    course: 8,
+    prerequisites: [99],
+    title: "Dot Product, Cross Product, and Triple Product"
   },
-  4: {
-    course: 1,
+  101: {
+    course: 8,
+    prerequisites: [100],
+    title: "N-Dimensional Space"
+  },
+  102: {
+    course: 8,
+    prerequisites: [100],
+    title: "Multiplying a Vector by a Matrix"
+  },
+  103: {
+    course: 8,
+    prerequisites: [102],
+    title: "Matrix Arithmetic"
+  },
+  104: {
+    course: 8,
+    prerequisites: [125],
+    title: "The Determinant"
+  },
+  105: {
+    course: 8,
+    prerequisites: [104, 110],
+    title: "Inverse Matrices"
+  },
+  106: {
+    course: 8,
+    prerequisites: [0],
+    title: "Solving a Linear System Using Gaussian Elimination"
+  },
+  108: {
+    course: 8,
+    prerequisites: [104],
+    title: "Eigenvalues"
+  },
+  109: {
+    course: 8,
+    prerequisites: [110, 108, 139],
+    title: "Eigenvectors"
+  },
+  110: {
+    course: 8,
+    prerequisites: [106, 125],
+    title: "Free Variables"
+  },
+  111: {
+    course: 8,
+    prerequisites: [105, 109],
+    title: "Diagonalization"
+  },
+  125: {
+    course: 8,
+    prerequisites: [103, 101],
+    title: "Span of Vectors"
+  },
+  126: {
+    course: 8,
+    prerequisites: [135],
+    title: "Basis of a Vector Space"
+  },
+  135: {
+    course: 8,
+    prerequisites: [125],
+    title: "Vector Spaces"
+  },
+  136: {
+    course: 8,
+    prerequisites: [126],
+    title: "Dimension of a Vector Space"
+  },
+  139: {
+    course: 8,
+    prerequisites: [136],
+    title: "Columnspace, Rowspace, and Nullspace"
+  },
+  142: {
+    course: 10,
+    prerequisites: [0],
+    title: "Combinatorial Counting"
+  },
+  143: {
+    course: 10,
+    prerequisites: [142],
+    title: "Probability of an Event"
+  },
+  144: {
+    course: 10,
+    prerequisites: [143],
+    title: "Random Variables"
+  },
+  145: {
+    course: 10,
+    prerequisites: [150],
+    title: "Probability of a Compound Event"
+  },
+  146: {
+    course: 10,
+    prerequisites: [152],
+    title: "Discrete Probability Distributions"
+  },
+  147: {
+    course: 10,
+    prerequisites: [146],
+    title: "Continuous Probability Distributions"
+  },
+  148: {
+    course: 10,
+    prerequisites: [145, 147, 171, 179],
+    title: "Joint Distributions"
+  },
+  149: {
+    course: 10,
+    prerequisites: [148],
+    title: "Marginal Distributions"
+  },
+  150: {
+    course: 10,
+    prerequisites: [144],
+    title: "Histograms"
+  },
+  151: {
+    course: 10,
+    prerequisites: [150],
+    title: "Mean, Median, Mode"
+  },
+  152: {
+    course: 10,
+    prerequisites: [151],
+    title: "Variance and Standard Deviation"
+  },
+  153: {
+    course: 10,
+    prerequisites: [148],
+    title: "Covariance"
+  },
+  154: {
+    course: 10,
+    prerequisites: [145],
+    title: "Bayes' Theorem"
+  },
+  155: {
+    course: 10,
+    prerequisites: [149, 154],
+    title: "Conditional Distributions"
+  },
+  156: {
+    course: 10,
+    prerequisites: [155],
+    title: "Posterior Distributions"
+  },
+  162: {
+    course: 11,
+    prerequisites: [99],
+    title: "Sketching 3D Curves"
+  },
+  163: {
+    course: 11,
+    prerequisites: [162],
+    title: "Partial Derivatives"
+  },
+  165: {
+    course: 11,
+    prerequisites: [163],
+    title: "The Gradient of a Function"
+  },
+  171: {
+    course: 11,
+    prerequisites: [175],
+    title: "Volume Integrals"
+  },
+  175: {
+    course: 11,
+    prerequisites: [163, 0],
+    title: "Double Integrals"
+  },
+  179: {
+    course: 11,
+    prerequisites: [175, 104],
+    title: "Substitution and the Jacobian"
+  },
+  247: {
+    course: 13,
+    prerequisites: [1, 0],
+    title: "Big-O Notation"
+  },
+  248: {
+    course: 13,
     prerequisites: [1],
-    title: "Elementary Search & Recursion"
+    title: "Recursion"
   },
-  6: {
-    course: 1,
+  249: {
+    course: 13,
+    prerequisites: [1, 248],
+    title: "Linked Lists"
+  },
+  250: {
+    course: 13,
+    prerequisites: [247, 253],
+    title: "Elementary Array Sorting"
+  },
+  252: {
+    course: 13,
+    prerequisites: [249],
+    title: "Binary Trees"
+  },
+  253: {
+    course: 13,
+    prerequisites: [252],
+    title: "Heaps"
+  },
+  254: {
+    course: 13,
+    prerequisites: [252],
+    title: "General Trees"
+  },
+  255: {
+    course: 13,
+    prerequisites: [254],
+    title: "Depth-First Search"
+  },
+  256: {
+    course: 13,
+    prerequisites: [255, 257],
+    title: "Breadth-First Search"
+  },
+  257: {
+    course: 13,
     prerequisites: [1],
-    title: "Statistics"
+    title: "Stacks &amp; Queues"
   },
-  7: {
-    course: 1,
-    prerequisites: [4],
-    title: "Sorting Algorithms"
+  261: {
+    course: 13,
+    prerequisites: [256],
+    title: "Graphs, Dags, and Weights"
   },
-  8: {
-    course: 1,
-    prerequisites: [1],
-    title: "Space Empires Game Engine"
+  262: {
+    course: 14,
+    prerequisites: [0, 1],
+    title: "Single-Variable Gradient Descent"
   },
-  9: {
-    course: 1,
-    prerequisites: [10],
-    title: "Gradient Descent"
+  263: {
+    course: 14,
+    prerequisites: [262, 165],
+    title: "Multivariable Gradient Descent"
   },
-  10: {
-    course: 1,
-    prerequisites: [2],
-    title: "Regression via Pseudoinverse"
+  264: {
+    course: 14,
+    prerequisites: [263, 266],
+    title: "Loss Functions"
   },
-  12: {
-    course: 1,
-    prerequisites: [8],
-    title: "Space Empires Strategy Players"
+  265: {
+    course: 8,
+    prerequisites: [105],
+    title: "The Pseudoinverse"
   },
-  13: {
-    course: 2,
-    prerequisites: [9,18,19],
+  266: {
+    course: 14,
+    prerequisites: [265],
+    title: "Polynomial Regression"
+  },
+  267: {
+    course: 14,
+    prerequisites: [266],
+    title: "Multiple Linear Regression"
+  },
+  268: {
+    course: 14,
+    prerequisites: [267],
+    title: "Interaction Terms"
+  },
+  269: {
+    course: 14,
+    prerequisites: [266],
+    title: "Overfitting"
+  },
+  270: {
+    course: 14,
+    prerequisites: [267, 143],
+    title: "Logistic Regression"
+  },
+  271: {
+    course: 14,
+    prerequisites: [263],
+    title: "Grid Search"
+  },
+  272: {
+    course: 14,
+    prerequisites: [263],
+    title: "Batch, Mini-batch, and Stochastic Gradient Descent"
+  },
+  273: {
+    course: 14,
+    prerequisites: [263, 270, 276],
+    title: "Support Vector Machines"
+  },
+  274: {
+    course: 14,
+    prerequisites: [277, 261],
     title: "Neural Networks"
   },
-  14: {
-    course: 2,
-    prerequisites: [3,6],
-    title: "Random Forests"
+  275: {
+    course: 14,
+    prerequisites: [274],
+    title: "Backpropagation"
   },
-  15: {
-    course: 2,
-    prerequisites: [18,6],
-    title: "Clustering & Dimensionality Reduction"
+  276: {
+    course: 14,
+    prerequisites: [264],
+    title: "Regularization"
   },
-  18: {
-    course: 1,
-    prerequisites: [3],
-    title: "Graphs"
+  277: {
+    course: 14,
+    prerequisites: [101, 273],
+    title: "Kernel Trick"
   },
-  19: {
-    course: 1,
-    prerequisites: [1],
+  278: {
+    course: 14,
+    prerequisites: [],
     title: "Evolutionary Algorithms"
   },
-  20: {
-    course: 2,
-    prerequisites: [13,15],
-    title: "Deep Neural Networks"
+  279: {
+    course: 14,
+    prerequisites: [278],
+    title: "Genetic Algorithms"
   },
-  21: {
-    course: 2,
-    prerequisites: [18],
-    title: "Reinforcement Learning"
+  280: {
+    course: 14,
+    prerequisites: [274, 279],
+    title: "Neuroevolution"
   },
-  22: {
-    course: 3,
-    prerequisites: [21,20],
-    title: "Deep Reinforcement Learning"
+  281: {
+    course: 13,
+    prerequisites: [261, 295],
+    title: "Dijskra’s Algorithm"
   },
+  282: {
+    course: 13,
+    prerequisites: [281],
+    title: "A* Search"
+  },
+  283: {
+    course: 13,
+    prerequisites: [261],
+    title: "Minimum Spanning Tree"
+  },
+  284: {
+    course: 13,
+    prerequisites: [283],
+    title: "Prim's Algorithm"
+  },
+  285: {
+    course: 13,
+    prerequisites: [283],
+    title: "Kruskal's Algorithm"
+  },
+  286: {
+    course: 14,
+    prerequisites: [252],
+    title: "Decision Trees"
+  },
+  287: {
+    course: 14,
+    prerequisites: [152, 286],
+    title: "ID3 &amp; CART"
+  },
+  288: {
+    course: 14,
+    prerequisites: [286],
+    title: "MARS"
+  },
+  289: {
+    course: 14,
+    prerequisites: [269, 287, 290],
+    title: "Random Forests"
+  },
+  290: {
+    course: 14,
+    prerequisites: [151],
+    title: "k Nearest Neighbors"
+  },
+  291: {
+    course: 14,
+    prerequisites: [289],
+    title: "Adaboost &amp; Gradient Boosting"
+  },
+  292: {
+    course: 16,
+    prerequisites: [275, 1],
+    title: "Convolutional Neural Networks"
+  },
+  293: {
+    course: 14,
+    prerequisites: [296],
+    title: "Naive Bayes"
+  },
+  294: {
+    course: 13,
+    prerequisites: [248],
+    title: "Divide and Conquer"
+  },
+  295: {
+    course: 13,
+    prerequisites: [294],
+    title: "Dynamic Programming"
+  },
+  296: {
+    course: 10,
+    prerequisites: [156],
+    title: "Maximum Likelihood Estimation"
+  },
+  297: {
+    course: 14,
+    prerequisites: [296],
+    title: "Expectation-Maximization (Gaussian Mixture Models)"
+  },
+  298: {
+    course: 14,
+    prerequisites: [1],
+    title: "k-Nearest Neighbors"
+  },
+  299: {
+    course: 14,
+    prerequisites: [298],
+    title: "k-Means"
+  },
+  300: {
+    course: 14,
+    prerequisites: [299, 301],
+    title: "DBSCAN"
+  },
+  301: {
+    course: 13,
+    prerequisites: [261],
+    title: "Tarjan's Algorithm"
+  },
+  302: {
+    course: 14,
+    prerequisites: [252, 0],
+    title: "Hierarchical Clustering"
+  },
+  303: {
+    course: 14,
+    prerequisites: [153, 111],
+    title: "Principal Component Analysis"
+  },
+  304: {
+    course: 14,
+    prerequisites: [303, 296],
+    title: "Independent Component Analysis"
+  },
+  305: {
+    course: 16,
+    prerequisites: [303, 292],
+    title: "Autoencoders"
+  },
+  306: {
+    course: 10,
+    prerequisites: [147],
+    title: "KL Divergence"
+  },
+  307: {
+    course: 14,
+    prerequisites: [306],
+    title: "t-SNE"
+  },
+  328: {
+    course: 15,
+    prerequisites: [155],
+    title: "Markov Decision Process"
+  },
+  329: {
+    course: 15,
+    prerequisites: [328],
+    title: "Bellman Equation"
+  },
+  330: {
+    course: 15,
+    prerequisites: [329, 295],
+    title: "Value Iteration"
+  },
+  331: {
+    course: 15,
+    prerequisites: [330],
+    title: "Policy Iteration"
+  },
+  332: {
+    course: 15,
+    prerequisites: [329, 295],
+    title: "Temporal Difference Learning"
+  },
+  333: {
+    course: 15,
+    prerequisites: [332],
+    title: "On-Policy TD Learning (SARSA)"
+  },
+  334: {
+    course: 15,
+    prerequisites: [333],
+    title: "Off-Policy TD Learning (Q-Learning)"
+  },
+  335: {
+    course: 15,
+    prerequisites: [334],
+    title: "TD-Lambda"
+  },
+  336: {
+    course: 15,
+    prerequisites: [335, 292],
+    title: "Deep Q-Learning"
+  },
+  337: {
+    course: 15,
+    prerequisites: [336],
+    title: "Experience Replay"
+  },
+  338: {
+    course: 16,
+    prerequisites: [305],
+    title: "Restricted Boltzmann Machines"
+  },
+  339: {
+    course: 16,
+    prerequisites: [338],
+    title: "Deep Belief Networks"
+  },
+  340: {
+    course: 16,
+    prerequisites: [275, 1],
+    title: "Recurrent &amp; Recursive Neural Networks"
+  },
+  341: {
+    course: 16,
+    prerequisites: [340],
+    title: "Long Short-Term Memory Networks"
+  },
+  342: {
+    course: 16,
+    prerequisites: [292],
+    title: "Generative Adversarial Networks"
+  },
+  99: {
+    course: 8,
+    prerequisites: [0],
+    title: "Vectors and Vector Arithmetic"
+  }
 }
+
+/*function eliminateMissingPrerequisites() {
+	propertiesKeys = Object.keys(properties)
+	for(let nodeId in properties){
+  	let prerequisites = properties[nodeId]['prerequisites']
+    prerequisites = prerequisites.filter(x => propertiesKeys.includes(x.toString()));
+    properties[nodeId]['prerequisites'] = prerequisites
+  }
+}
+
+function filterCourses(courses) {
+	filteredProperties = {}
+  for(let nodeId in properties){
+  	courseId = properties[nodeId]['course']
+  	if(courses.includes(courseId)){
+    	filteredProperties[nodeId] = properties[nodeId]
+      prerequisites = filteredProperties[nodeId]['prerequisites']
+      filteredPrerequisites = []
+      for(let i=0; i<prerequisites.length; i++) {
+      	prereqNodeId = prerequisites[i]
+        prereqCourseId = properties[prereqNodeId]['course']
+        if(courses.includes(prereqCourseId)){
+        	filteredPrerequisites.push(prereqNodeId)
+        }
+      }
+      filteredProperties[nodeId]['prerequisites'] = filteredPrerequisites
+    }
+  }
+  return filteredProperties
+}
+
+function filterCoursesAndParents(courses) {
+  let filteredProperties = {}
+  for(let nodeId in properties){
+  	let courseId = properties[nodeId]['course']
+  	if(courses.includes(courseId)){
+    	filteredProperties[nodeId] = properties[nodeId]
+      }
+    }
+
+  let addedNodes = Object.keys(filteredProperties)
+  while(addedNodes.length > 0){
+  	let newAddedNodes = []
+  	for (let i=0; i<addedNodes.length; i++) {
+    	addedNodeId = addedNodes[i]
+      prerequisites = properties[addedNodeId]['prerequisites']
+      for(let j=0; j<prerequisites.length; j++) {
+      	prereqNodeId = prerequisites[j]
+        if(!(prereqNodeId in filteredProperties)){
+          filteredProperties[prereqNodeId] = properties[prereqNodeId]
+        	newAddedNodes.push(prereqNodeId)
+        }
+      }
+    }
+    addedNodes = Array.from(newAddedNodes)
+  }
+  return filteredProperties 
+}
+
+function getNodesInCourses(courses){
+	let nodesInCourses = []
+  for(nodeId in properties){
+  	let nodeCourse = properties[nodeId]['course']
+    if(courses.includes(nodeCourse)){
+    	nodesInCourses.push(parseInt(nodeId))
+    }
+  }
+  return nodesInCourses
+}
+
+function condenseNodes(nodeIds,newNodeId,newNodeProperties){
+	let condensedProperties = {}
+	for(nodeId in properties) {
+  	nodeId = parseInt(nodeId)
+  	if(!nodeIds.includes(nodeId)){
+    	condensedProperties[nodeId] = properties[nodeId]
+      prerequisites = properties[nodeId]['prerequisites']
+      condensedPrerequisites = []
+      for(j=0; j<prerequisites.length; j++){
+      	let prerequisiteId = prerequisites[j]
+        if(nodeIds.includes(prerequisiteId)){
+        	if(!condensedPrerequisites.includes(newNodeId)){
+        		condensedPrerequisites.push(newNodeId)
+          }
+        } else {
+        	condensedPrerequisites.push(prerequisiteId)
+        }
+      }
+      condensedProperties[nodeId]['prerequisites'] = condensedPrerequisites
+    }
+  }
+  condensedProperties[newNodeId] = newNodeProperties
+  console.log(condensedProperties)
+  return condensedProperties
+}
+
+eliminateMissingPrerequisites()
+basicMathNodes = getNodesInCourses([1,2,3,4,5,6,7])
+basicCSNodes = getNodesInCourses([21])
+properties = condenseNodes(basicMathNodes,0,{'title': "AP Calculus BC", 'course': 0, 'prerequisites':[]})
+properties = condenseNodes(basicCSNodes,-1,{'title': "Object-Oriented Programming", 'course': 0, 'prerequisites':[]})
+properties = filterCoursesAndParents([13,14,15,16])
+console.log(Object.keys(properties).length)
+console.log(properties)*/
 
 ////////////////////
 /* TEXT UTILITIES */
@@ -365,6 +835,47 @@ function breakupText(text, charsPerLine=20, leeway=5) {
   result = replaceAll(result, ' \\n', '\\n')
   return result.trim()
 }
+
+function replaceDollarSignsWithDelimiters(string,leftDelimiter='\\(',rightDelimiter='\\)') {
+		opening = true
+    newString = ''
+    for(i=0; i<string.length; i++) {
+    		char = string[i]
+        if(char == '$') {
+        		if(opening) {
+            		newString += leftDelimiter
+                opening = false
+            } else {
+            		newString += rightDelimiter
+                opening = true
+            }
+        } else {
+        		newString += char
+        }
+    }
+    return newString;
+}
+
+///////////////
+/* SIDEPANEL */
+///////////////
+
+function fillTemplates(template,replacementList) {
+		result = []
+    for(i=0; i<replacementList.length; i++) {
+    		replacement = replacementList[i]
+    		replacedTemplate = replaceAll(template,'[[REPLACE]]',replacement)
+        replacedTemplate = replaceAll(replacedTemplate,'[[ENUMERATE]]',i+1)
+        result.push(replacedTemplate)
+    }
+    return result;
+}
+
+var videoTemplate = '<iframe width="95%" max-width="20px" src="https://www.youtube.com/embed/[[REPLACE]]" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+var readingTemplate = '<a href="[[REPLACE]]" target="_blank">reading [[ENUMERATE]]</a>'
+
+var exerciseTemplate = '<a href="[[REPLACE]]" target="_blank">exercise [[ENUMERATE]]</a>'
 
 /////////////////
 /* DOT MARKUP */
@@ -426,6 +937,84 @@ rankdir=BT;
 
 var dot = styleDot(dotUnstyled,dotStyle)
 
+/////////////////
+/* SVG STYLING */
+/////////////////
+
+function updateSvgNodeStyle(nodeId, key, val) {
+	svgStyle[nodeId]['node'][key] = val 
+}
+
+function updateSvgEdgeStyle(nodeId, prerequisiteId, key, val) {
+	svgStyle[nodeId]['edges'][prerequisiteId][key] = val
+}
+
+function resetSvgStyle() {
+  for(var nodeId in properties) {
+    title = properties[nodeId]['title']
+    courseId = properties[nodeId]['course']
+    svgStyle[nodeId] = {'node':{}, 'edges':{}}
+    
+    updateSvgNodeStyle(nodeId, 'fill', courses[courseId]['color'])
+    updateSvgNodeStyle(nodeId, 'stroke-width', 0)
+    
+    prerequisiteIds = properties[nodeId]['prerequisites']
+    for(i=0; i<prerequisiteIds.length; i++) {
+    	prerequisiteId = prerequisiteIds[i]
+      svgStyle[nodeId]['edges'][prerequisiteId] = {}
+      updateSvgEdgeStyle(nodeId, prerequisiteId, 'stroke-width', 1.01)
+    }
+  }
+}
+
+var svgStyle = {}
+resetSvgStyle()
+
+////////////////////////
+/* SVG STYLE UPDATERS */
+////////////////////////
+
+function highlightNode(nodeId) {
+  updateSvgNodeStyle(nodeId, 'fill', '#f6ff4f')
+}
+
+function boldNode(nodeId) {
+  updateSvgNodeStyle(nodeId, 'stroke-width', 3)
+}
+
+function boldEdge(nodeId, prerequisiteId) {
+	updateSvgEdgeStyle(nodeId, prerequisiteId, 'stroke-width', 5)
+}
+
+function boldPrerequisiteEdges(nodeId){
+	prerequisiteIds = properties[nodeId]['prerequisites']
+  for(i=0; i<prerequisiteIds.length; i++) {
+  	prerequisiteId = prerequisiteIds[i]
+  	boldEdge(nodeId, prerequisiteId)
+  }
+}
+
+function applyToAncestors(nodeIds, f) {
+	if(!Array.isArray(nodeIds)){
+  	nodeIds = [nodeIds]
+  }
+
+  allParents = []
+	for(var i=0; i<nodeIds.length; i++) {
+    var nodeId = nodeIds[i]
+  	f(nodeId)
+    parents = properties[nodeId]['prerequisites']
+    for(j=0; j<parents.length; j++) {
+    	if(!allParents.includes(parents[j])){
+    		allParents.push(parents[j])
+      }
+    }
+  }
+  if(allParents.length>0){
+  	applyToAncestors(allParents, f)
+  }
+}
+
 ///////////////////////
 /* DISPLAY UTILITIES */
 ///////////////////////
@@ -443,20 +1032,129 @@ courseId = properties[nodeId]['course']
   
   if(nodeResources){
       summary = nodeResources['summary']
+      videos = nodeResources['videos']
+      readings = nodeResources['readings']
+      exercises = nodeResources['exercises']
   } else {
   		summary = 'Nothing here yet!'
+      videos = ''
+      readings = ''
+      exercises = ''
   }
   
   if(summary){
-      summaryHTML = summary.join('</p><hr><p>')
+      summary = replaceDollarSignsWithDelimiters(summary,leftDelimiter='\\(',rightDelimiter='\\)')
+      summary = replaceAll(summary,'\\(\\)','$')
+      summary = replaceDollarSignsWithDelimiters(summary,leftDelimiter='\\[',rightDelimiter='\\]')
+      summaryHTML = replaceAll(summary,'\n','</p><p>')
       summaryHTML = '<p>'+summaryHTML+'</p>'
   } else {
   		summaryHTML = ''
   }
   
+  if(videos){
+      videoList = fillTemplates(videoTemplate, videos)
+      videoHTML = '<p>'+videoList.join('</p><p>')+'</p>'
+  } else {
+  		videoHTML = ''
+  }
+  
+  if(readings){
+      readingList = fillTemplates(readingTemplate, readings)
+      readingHTML = '<p>Readings: '+readingList.join(', ')+'</p>'
+  } else {
+  		readingHTML = ''
+  }
+  
+  if(exercises){
+      exerciseList = fillTemplates(exerciseTemplate, exercises)
+      exerciseHTML = '<p>Exercises: '+exerciseList.join(', ')+'</p>'
+  } else {
+  		exerciseHTML = ''
+  }
+  
   document.getElementById('infoPanel-summary').innerHTML = summaryHTML
+  document.getElementById('infoPanel-video').innerHTML = videoHTML
+  document.getElementById('infoPanel-readings').innerHTML = readingHTML
+  document.getElementById('infoPanel-exercises').innerHTML = exerciseHTML
+  
+  trailingSpace = '<br><br><br>'
+  document.getElementById('infoPanel-exercises').innerHTML += trailingSpace
   
   MathJax.Hub.Queue(["Typeset",MathJax.Hub,'infoPanel-summary']); // typeset any new mathjax | https://docs.mathjax.org/en/v1.0/typeset.html
+}
+
+function highlightLearningPath(nodeId) {
+  resetSvgStyle()
+  highlightNode(nodeId)
+  boldNode(nodeId)
+  boldPrerequisiteEdges(nodeId)
+  applyToAncestors(nodeId, highlightNode)
+  applyToAncestors(nodeId, boldPrerequisiteEdges)
+}
+
+function getNodesFromSvg() {
+	var nodeObjects = document.getElementsByClassName('node')
+	var nodes = {}
+	for(i=0; i<nodeObjects.length; i++) {
+    node = nodeObjects[i]
+    title = node.getElementsByTagName('title')[0].innerHTML
+    title = parseInt(title)
+    nodes[title] = node
+	}
+  return nodes
+}
+
+function getEdgesFromSvg() {
+	var edgeObjects = document.getElementsByClassName('edge')
+	var edges = {}
+  
+  for(i=0; i<edgeObjects.length; i++) {
+    edge = edgeObjects[i]
+    title = edge.getElementsByTagName('title')[0].innerHTML
+    prerequisiteId = title.slice(0,title.indexOf('-'))
+    prerequisiteId = parseInt(prerequisiteId)
+   	nodeId = title.slice(title.indexOf('-')+5)
+    nodeId = parseInt(nodeId)
+    if(!(nodeId in edges)) {
+    	edges[nodeId] = {}
+    }
+    edges[nodeId][prerequisiteId] = edge
+	}
+  return edges
+}
+
+function refreshSvgNodeStyle() {
+	var nodes = getNodesFromSvg()
+  for(var nodeId in svgStyle){
+  	nodeId = parseInt(nodeId)
+    
+  	var nodeAttr = svgStyle[nodeId]['node']
+  	for(var attr in nodeAttr) {
+    	var val = nodeAttr[attr]
+    	nodes[nodeId].getElementsByTagName('ellipse')[0].setAttribute(attr,val)
+    }
+  }
+}
+
+function refreshSvgEdgeStyle() {
+  var edges = getEdgesFromSvg()
+  for(var nodeId in svgStyle) {
+    var prerequisiteIds = properties[nodeId]['prerequisites']
+    for(i=0; i<prerequisiteIds.length; i++) {
+        var prerequisiteId = prerequisiteIds[i]
+        var edgeAttr = svgStyle[nodeId]['edges'][prerequisiteId]
+        for(var attr in edgeAttr) {
+        	val = edgeAttr[attr]
+          edges[nodeId][prerequisiteId].getElementsByTagName('path')[0].setAttribute(attr,val)
+        }
+      }
+   }
+}
+
+function refreshSvgStyle() {
+  refreshSvgNodeStyle()
+  refreshSvgEdgeStyle()
 }
 
 function attributer(datum, index, nodes) {
@@ -506,12 +1204,25 @@ function interactive() {
     nodes = d3.selectAll('.node');
     nodes
    			.on("click", onClick)
+        //.on("mouseover", mouseover)
+        //.on("mouseout", mouseout);
 }
 
 function onClick() {
   var nodeId = d3.select(this).selectAll('title').text();
   nodeId = parseInt(nodeId)
+  highlightLearningPath(nodeId)
   updateInfoPanel(nodeId)
+  refreshSvgStyle()
+};
+
+function mouseover() {
+  var text = d3.select(this).selectAll('text').text();
+  document.getElementById('infoPanel').innerHTML=text;
+};
+
+function mouseout() {
+  document.getElementById('infoPanel').innerHTML="&nbsp;";
 };
 
 //////////
