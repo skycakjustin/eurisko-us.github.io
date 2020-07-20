@@ -153,7 +153,8 @@ var resources = {
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-6-1" target="_blank">Mean, Variance, and Standard Deviation</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-8-1" target="_blank">Median, Covariance, and Correlation</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-13-2" target="_blank">Normalization and Distance Metrics</a>',
-      'todo: discrete probability distributions, continuous probability distributions, KL divergence, joint distributions, marginal distributions'
+      'todo: discrete probability distributions, continuous probability distributions, KL divergence, joint distributions, marginal distributions',
+      "todo: Bayes' theorem, naive bayes, posterior distributions, maximum likelihood estimation",
       ]},
     7: {'summary': [
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-9-1" target="_blank">Selection Sort and Bubble Sort</a>',
@@ -207,6 +208,9 @@ var resources = {
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-24-1" target="_blank">Overfitting</a>',
       'todo: multiple linear regression, interaction terms, logistic regression'
       ]},
+      12: {'summary': [
+      'todo: ...',
+      ]},
       13: {'summary': [
       'todo: svm + kernel trick, single-layer neural network, neuroevolution, backpropagation, multilayer neural network, dropout',
       ]},
@@ -215,9 +219,6 @@ var resources = {
       ]},
       15: {'summary': [
       'todo: knn, kmeans, dbscan, t-sne, pca, ica, em (gmm), hierarchical clustering',
-      ]},
-      16: {'summary': [
-      "todo: Bayes' theorem, naive bayes, posterior distributions, maximum likelihood estimation",
       ]},
       18: {'summary': [
       "todo: graphs / dags / weights, Dijskra's algorithm, A* search, minimum spanning tree, Prim's algorithm, Kruskal's algorithm, Tarjan's algorithm"
@@ -261,7 +262,7 @@ var properties = {
   6: {
     course: 1,
     prerequisites: [1],
-    title: "Elementary Statistics"
+    title: "Statistics"
   },
   7: {
     course: 1,
@@ -300,13 +301,8 @@ var properties = {
   },
   15: {
     course: 2,
-    prerequisites: [18,16],
+    prerequisites: [18,6],
     title: "Clustering & Dimensionality Reduction"
-  },
-  16: {
-    course: 1,
-    prerequisites: [6],
-    title: "Bayesian Statistics"
   },
   18: {
     course: 1,
