@@ -22,7 +22,7 @@ author_profile: false
     </style>
 </head>
 
-# [<center>Data Structures and Algorithms</center>](#top)
+# [<center>Computational Modeling</center>](#top)
 
 <center><b>Summer 2020</b></center>
 
