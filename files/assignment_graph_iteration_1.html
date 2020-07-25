@@ -36,7 +36,7 @@
     text-align: center;
     padding-bottom: 12px;
   }
-  #infoPanel-summary {
+  #infoPanel-sidepanelItems {
     font-family: Trebuchet MS;
     font-size: 100%;
     padding-top: 6px;
@@ -69,7 +69,7 @@
 <div id="container">
   <div id="infoPanel">
     <div id="infoPanel-title">Eurisko Assignments</div>
-    <div id="infoPanel-summary"><p>
+    <div id="infoPanel-sidepanelItems"><p>
     Click on a topic to see assignment problems.
     </p></div>
   </div>
@@ -98,8 +98,8 @@ var courses = {
 3: {'title': 'Reinforcement Learning', 'color': lightPurple},
 }
 
-var resources = {
-    1: {'summary': [
+var topicResources = {
+    1: {'sidepanelItems': [
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-1-1" target="_blank">Converting Between Letters and Numbers</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-1-2" target="_blank">Checking a String for Symmetry</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-1-3" target="_blank">Converting Between Decimal and Binary</a>',
@@ -115,7 +115,7 @@ var resources = {
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-8-2" target="_blank">Untangling a Nested List Comprehension</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-12-1" target="_blank">Huffman Compression</a>',
       ]},
-    2: {'summary': [
+    2: {'sidepanelItems': [
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-2-3" target="_blank">Matrix Arithmetic</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-3-3" target="_blank">Generalizing the Matrix Class to M x N Matrices</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-4-4" target="_blank">Refactoring and Overloading Operators in the Matrix Class</a>',
@@ -129,7 +129,7 @@ var resources = {
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-23-1" target="_blank">Matrix Tests</a>',
       'todo: theory behind eigenvectors, QR algorithm for computing eigenvalues'
       ]},
-    3: {'summary': [
+    3: {'sidepanelItems': [
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-3-1" target="_blank">Stacks and Queues</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-8-4" target="_blank">Singly Linked List</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-9-2" target="_blank">Singly Linked List Methods</a>',
@@ -139,7 +139,7 @@ var resources = {
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-15-1" target="_blank">Depth-First Search in a Binary Tree</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-16-2" target="_blank">Breadth-First Search in a Binary Tree</a>',
       ]},
-    4: {'summary': [
+    4: {'sidepanelItems': [
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-3-4" target="_blank">Brute-Force Decryption</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-4-2" target="_blank">Big-O Notation</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-4-3" target="_blank">Recursive Sequences</a>',
@@ -149,14 +149,14 @@ var resources = {
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-6-3" target="_blank">Finding Roots via Newton-Rhapson Search</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-11-1" target="_blank">Timing Code</a>',
       ]},
-    6: {'summary': [
+    6: {'sidepanelItems': [
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-6-1" target="_blank">Mean, Variance, and Standard Deviation</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-8-1" target="_blank">Median, Covariance, and Correlation</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-13-2" target="_blank">Normalization and Distance Metrics</a>',
       'todo: discrete probability distributions, continuous probability distributions, KL divergence, joint distributions, marginal distributions',
       "todo: Bayes' theorem, naive bayes, posterior distributions, maximum likelihood estimation, kalman filter",
       ]},
-    7: {'summary': [
+    7: {'sidepanelItems': [
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-9-1" target="_blank">Selection Sort and Bubble Sort</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-10-2" target="_blank">Histogram (Counting) Sort and Insertion Sort</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-11-2" target="_blank">Shell Sort</a>',
@@ -165,7 +165,7 @@ var resources = {
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-22-2" target="_blank">Merging Two Sorted Arrays</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-23-2" target="_blank">MergeSort</a>',
       ]},
-    8: {'summary': [
+    8: {'sidepanelItems': [
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-9-3" target="_blank">Game on a Grid</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-10-3" target="_blank">Class Architecture for Space Empires</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-11-3" target="_blank">Rendering the Game Board</a>',
@@ -185,7 +185,7 @@ var resources = {
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-23-3" target="_blank">DumbPlayer Tests</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-24-2" target="_blank">Refactoring space-empires</a>',
       ]},
-    9: {'summary': [
+    9: {'sidepanelItems': [
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-12-4" target="_blank">Single-Variable Gradient Descent</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-12-4" target="_blank">2-Variable Gradient Descent</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-15-2" target="_blank">Linear Regression via Gradient Descent</a>',
@@ -197,7 +197,7 @@ var resources = {
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-1" target="_blank">Cartesian Product</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-2" target="_blank">GradientDescent Tests Output Format; Generalizing Grid Search to Any Number of Parameters</a>',
       ]},
-    10: {'summary': [
+    10: {'sidepanelItems': [
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-14-2" target="_blank">Linear Regression via the Pseudoinverse</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-17-1" target="_blank">Quadratic Regression via the Pseudoinverse</a>',
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-18-1" target="_blank">PolynomialRegressor Class</a>',
@@ -208,37 +208,37 @@ var resources = {
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-24-1" target="_blank">Overfitting</a>',
       'todo: multiple linear regression, interaction terms, logistic regression, regularization methods including tikhonov regularization'
       ]},
-      12: {'summary': [
+      12: {'sidepanelItems': [
       'todo: ...',
       ]},
-      13: {'summary': [
+      13: {'sidepanelItems': [
       'todo: svm + kernel trick, single-layer neural network, neuroevolution, backpropagation, multilayer neural network, dropout',
       ]},
-      14: {'summary': [
+      14: {'sidepanelItems': [
       'todo: decision tree, MARS, ID3 & CART, random forests, adaboost & gradient boosting',
       ]},
-      15: {'summary': [
+      15: {'sidepanelItems': [
       'todo: knn, kmeans, dbscan, t-sne, pca, ica, em (gmm), hierarchical clustering',
       ]},
-      18: {'summary': [
+      18: {'sidepanelItems': [
       "todo: graphs / dags / weights, Dijskra's algorithm, A* search, minimum spanning tree, Prim's algorithm, Kruskal's algorithm, Tarjan's algorithm"
       ]},
-      19: {'summary': [
+      19: {'sidepanelItems': [
       "todo: evolutionary algorithms, genetic algorithms"
       ]},
-      20: {'summary': [
+      20: {'sidepanelItems': [
       "todo: convolutional neural networks, autoencoders, RBMs, deep belief networks"
       ]},
-      21: {'summary': [
+      21: {'sidepanelItems': [
       "todo: MDPs, Bellman Equation, Policy Iterat, Value Iteration, TD learning, On-Policy TD Learning (SARSA), Off-Policy TD Learning (Q-Learning), TD-lambda,"
       ]},
-      22: {'summary': [
+      22: {'sidepanelItems': [
       '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-22-4" target="_blank">AlphaStar Video</a>',
       "todo: ...",
       ]},
 }
 
-var properties = {
+var topicAttributes = {
   1: {
     course: 1,
     prerequisites: [],
@@ -346,8 +346,8 @@ var properties = {
 ////////////////////
 
 function replaceAll(string, original, replacement) {
-		prevString = string
-    newString = string.replace(original, replacement)
+		let prevString = string
+    let newString = string.replace(original, replacement)
     while(prevString != newString) {
     		prevString = newString
         newString = newString.replace(original, replacement)
@@ -355,12 +355,12 @@ function replaceAll(string, original, replacement) {
     return newString
 }
 
-function breakupText(text, charsPerLine=20, leeway=5) {
-  words = text.split(' ')
-  result = ''
-  counter = 0
-  for(i=0; i<words.length; i++) {
-  	word = words[i]
+function breakTextIntoLines(text, charsPerLine=20, leeway=5) {
+  let words = text.split(' ')
+  let result = ''
+  let counter = 0
+  for(let i=0; i<words.length; i++) {
+  	let word = words[i]
     if(counter + word.length <= charsPerLine) {
     	result += word+' '
       counter += word.length+1
@@ -380,88 +380,79 @@ function breakupText(text, charsPerLine=20, leeway=5) {
 /* DOT MARKUP */
 ////////////////
 
-function updateDotStyle(nodeId, key, val, which='node') {
-	dotStyle[nodeId][which][key] = val 
+function updateTopicStyle(nodeId, key, val) {
+	topicStyle[nodeId][key] = val 
 }
 
-function resetDotStyle() {
-  for(var nodeId in properties) {
-    title = properties[nodeId]['title']
-    courseId = properties[nodeId]['course']
-    dotStyle[nodeId] = {'node':{}, 'edges':{}}
-    updateDotStyle(nodeId, 'label', breakupText(title), which='node')
-    updateDotStyle(nodeId, 'color', 'black', which='node')
-    updateDotStyle(nodeId, 'fillcolor', courses[courseId]['color'], which='node')
+function resetTopicStyle() {
+  for(let nodeId in topicAttributes) {
+    let title = topicAttributes[nodeId]['title']
+    let courseId = topicAttributes[nodeId]['course']
+    let fillcolor = courses[courseId]['color']
+    topicStyle[nodeId] = {}
+    updateTopicStyle(nodeId, 'label', breakTextIntoLines(title))
+    updateTopicStyle(nodeId, 'color', 'black')
+    updateTopicStyle(nodeId, 'fillcolor', fillcolor)
   }
 }
 
-function styleDot(dotUnstyled, dotStyle) {
-		lines = []
-    for(var nodeId in properties) {
-    	prerequisites = properties[nodeId]['prerequisites']
-    	line = '{'+prerequisites.join(';')+'} -> '+nodeId
-      edgeAttr = dotStyle[nodeId]['edges']
-      for(var attr in edgeAttr) {
-          val = edgeAttr[attr]
-          line += ' ['+attr+'="'+val+'"]'
-        }
+function createDot() {
+		let lines = []
+    for(let nodeId in topicAttributes) {
+    	let prerequisites = topicAttributes[nodeId]['prerequisites']
+    	let line = '{'+prerequisites.join(';')+'} -> '+nodeId
       lines.push(line)
      }
     
-    for(var nodeId in dotStyle) {
-        line = nodeId
-        nodeAttr = dotStyle[nodeId]['node']
-        for(var attr in nodeAttr) {
-          val = nodeAttr[attr]
+    for(let nodeId in topicStyle) {
+        let line = nodeId
+        let nodeAttr = topicStyle[nodeId]
+        for(let attr in nodeAttr) {
+          let val = nodeAttr[attr]
           line += ' ['+attr+'="'+val+'"]'
         }
         lines.push(line)
     }
-    dot = dotUnstyled.substring(0, dotUnstyled.length - 2)
+    let dot = dotHeader.substring(0, dotHeader.length - 2)
     dot += '\n\n'
     dot += lines.join('\n')
     dot += '\n}\n'
     return dot
 }
 
-var dotStyle = {}
-resetDotStyle()
-
-var dotUnstyled = `
+var dotHeader = `
 digraph {
 node [style="filled"] [width=0] [fontcolor=black] [fontsize=20] [fontname="helvetica-bold"] [fixedsize=false] [fillcolor="#e3e3e3"] [color=black] [penwidth=0]
 edge [arrowsize=2.5] [penwidth=1.01]
 rankdir=BT;
 `; // penwidth=1.01 is necessary for the edges to go back to that original size when rendering. for some reason it doesn't update correctly when pendwith=1. (weird!)
 
-var dot = styleDot(dotUnstyled,dotStyle)
-
 ///////////////////////
 /* DISPLAY UTILITIES */
 ///////////////////////
 
 function updateInfoPanel(nodeId) {
-	let courseId = properties[nodeId]['course']
+	let courseId = topicAttributes[nodeId]['course']
   
   let courseColor = courses[courseId]['color']
   document.getElementById('infoPanel').style.background = courseColor
   
-  let nodeLabel = dotStyle[nodeId]['node']['label']
+  let nodeLabel = topicStyle[nodeId]['label']
   nodeLabel = replaceAll(nodeLabel,'\\n',' ')
   document.getElementById('infoPanel-title').innerHTML = nodeLabel;
   
-  let summary = ['Nothing here yet!']
-  if(nodeId in resources){
-      summary = resources[nodeId]['summary']
+  let sidepanelItems = ['Nothing here yet!']
+  if(nodeId in topicResources){
+      sidepanelItems = topicResources[nodeId]['sidepanelItems']
   }
-  let summaryHTML = '<p>'+summary.join('</p><hr><p>')+'</p>'
-  document.getElementById('infoPanel-summary').innerHTML = summaryHTML
+  let sidepanelItemsHTML = '<p>'+sidepanelItems.join('</p><hr><p>')+'</p>'
+  document.getElementById('infoPanel-sidepanelItems').innerHTML = sidepanelItemsHTML
   
-  //MathJax.Hub.Queue(["Typeset",MathJax.Hub,'infoPanel-summary']); // typeset any new mathjax | https://docs.mathjax.org/en/v1.0/typeset.html
+  //MathJax.Hub.Queue(["Typeset",MathJax.Hub,'infoPanel-sidepanelItems']); // typeset any new mathjax | https://docs.mathjax.org/en/v1.0/typeset.html
 }
 
 function attributer(datum, index, nodes) {
-    margin = 20; // to avoid scrollbars
+    let margin = 20; // to avoid scrollbars
     let selection = d3.select(this);
     if (datum.tag == "svg") {
         let width = window.innerWidth;
@@ -490,8 +481,6 @@ function resizeSVG() {
 /* RENDERING & INTERACTIVITY */
 ///////////////////////////////
 
-var graphviz = d3.select("#graph").graphviz().attributer(attributer).logEvents(false);
-
 function render() {
     graphviz
         .transition(function() {
@@ -518,6 +507,12 @@ function onClick() {
 //////////
 /* MAIN */
 //////////
+
+var topicStyle = {}
+resetTopicStyle()
+var dot = createDot()
+
+var graphviz = d3.select("#graph").graphviz().attributer(attributer).logEvents(false);
 
 d3.select(window).on("resize", resizeSVG);
 render(dot);
