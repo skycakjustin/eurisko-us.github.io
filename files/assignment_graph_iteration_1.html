@@ -381,19 +381,19 @@ function breakTextIntoLines(text, charsPerLine=20, leeway=5) {
 /* DOT MARKUP */
 ////////////////
 
-function updateTopicStyle(nodeId, key, val) {
-	topicStyle[nodeId][key] = val 
+function updateTopicDotStyle(nodeId, key, val) {
+	topicDotStyle[nodeId][key] = val 
 }
 
-function resetTopicStyle() {
+function resetTopicDotStyle() {
   for(let nodeId in topicAttributes) {
     let title = topicAttributes[nodeId]['title']
     let courseId = topicAttributes[nodeId]['course']
     let fillcolor = courses[courseId]['color']
-    topicStyle[nodeId] = {}
-    updateTopicStyle(nodeId, 'label', breakTextIntoLines(title))
-    updateTopicStyle(nodeId, 'color', 'black')
-    updateTopicStyle(nodeId, 'fillcolor', fillcolor)
+    topicDotStyle[nodeId] = {}
+    updateTopicDotStyle(nodeId, 'label', breakTextIntoLines(title))
+    updateTopicDotStyle(nodeId, 'color', 'black')
+    updateTopicDotStyle(nodeId, 'fillcolor', fillcolor)
   }
 }
 
@@ -405,9 +405,9 @@ function createDot() {
       lines.push(line)
      }
     
-    for(let nodeId in topicStyle) {
+    for(let nodeId in topicDotStyle) {
         let line = nodeId
-        let nodeAttr = topicStyle[nodeId]
+        let nodeAttr = topicDotStyle[nodeId]
         for(let attr in nodeAttr) {
           let val = nodeAttr[attr]
           line += ' ['+attr+'="'+val+'"]'
@@ -426,7 +426,153 @@ digraph {
 node [style="filled"] [width=0] [fontcolor=black] [fontsize=20] [fontname="helvetica-bold"] [fixedsize=false] [fillcolor="#e3e3e3"] [color=black] [penwidth=0]
 edge [arrowsize=2.5] [penwidth=1.01]
 rankdir=BT;
-`; // penwidth=1.01 is necessary for the edges to go back to that original size when rendering. for some reason it doesn't update correctly when pendwith=1. (weird!)
+`; // penwidth=1.01 is necessary for the edges to go back to that original size when re-rendering after changing the penwidth. for some reason it doesn't update correctly when pendwith=1. (weird!)
+
+/////////////////
+/* SVG STYLING */
+/////////////////
+
+function updateTopicSvgNodeStyle(nodeId, key, val) {
+	topicSvgStyle[nodeId]['node'][key] = val 
+}
+
+function updateTopicSvgEdgeStyle(nodeId, prerequisiteId, key, val) {
+	topicSvgStyle[nodeId]['edges'][prerequisiteId][key] = val
+}
+
+function resetTopicSvgStyle() {
+  for(let nodeId in topicAttributes) {
+    let title = topicAttributes[nodeId]['title']
+    let courseId = topicAttributes[nodeId]['course']
+    topicSvgStyle[nodeId] = {'node':{}, 'edges':{}}
+    
+    updateTopicSvgNodeStyle(nodeId, 'fill', courses[courseId]['color'])
+    updateTopicSvgNodeStyle(nodeId, 'stroke-width', 0)
+    
+    let prerequisiteIds = topicAttributes[nodeId]['prerequisites']
+    for(i=0; i<prerequisiteIds.length; i++) {
+    	let prerequisiteId = prerequisiteIds[i]
+      topicSvgStyle[nodeId]['edges'][prerequisiteId] = {}
+      updateTopicSvgEdgeStyle(nodeId, prerequisiteId, 'stroke-width', 1.01)
+    }
+  }
+}
+
+function highlightNode(nodeId) {
+  updateTopicSvgNodeStyle(nodeId, 'fill', '#f6ff4f')
+}
+
+function boldNode(nodeId) {
+  updateTopicSvgNodeStyle(nodeId, 'stroke-width', 3)
+}
+
+function boldEdge(nodeId, prerequisiteId) {
+	updateTopicSvgEdgeStyle(nodeId, prerequisiteId, 'stroke-width', 5)
+}
+
+function boldPrerequisiteEdges(nodeId){
+	let prerequisiteIds = topicAttributes[nodeId]['prerequisites']
+  for(let i=0; i<prerequisiteIds.length; i++) {
+  	let prerequisiteId = prerequisiteIds[i]
+  	boldEdge(nodeId, prerequisiteId)
+  }
+}
+
+function applyToAncestors(nodeGroupIds, f) {
+	if(!Array.isArray(nodeGroupIds)){
+  	nodeGroupIds = [nodeGroupIds]
+  }
+
+  let groupPrerequisites = []
+	for(let i=0; i<nodeGroupIds.length; i++) {
+    let nodeId = nodeGroupIds[i]
+  	f(nodeId)
+    let parents = topicAttributes[nodeId]['prerequisites']
+    for(let j=0; j<parents.length; j++) {
+    	let parentId = parents[j]
+    	if(!groupPrerequisites.includes(parentId)){
+    		groupPrerequisites.push(parentId)
+      }
+    }
+  }
+  if(groupPrerequisites.length>0){
+  	applyToAncestors(groupPrerequisites, f)
+  }
+}
+
+function highlightLearningPath(nodeId) {
+  resetTopicSvgStyle()
+  highlightNode(nodeId)
+  boldNode(nodeId)
+  boldPrerequisiteEdges(nodeId)
+  applyToAncestors(nodeId, highlightNode)
+  applyToAncestors(nodeId, boldPrerequisiteEdges)
+}
+
+function getNodesFromSvg() {
+	let nodeObjects = document.getElementsByClassName('node')
+	let nodes = {}
+	for(let i=0; i<nodeObjects.length; i++) {
+    let node = nodeObjects[i]
+    let title = node.getElementsByTagName('title')[0].innerHTML
+    title = parseInt(title)
+    nodes[title] = node
+	}
+  return nodes
+}
+
+function getEdgesFromSvg() {
+	var edgeObjects = document.getElementsByClassName('edge')
+	var edges = {}
+  
+  for(let i=0; i<edgeObjects.length; i++) {
+    let edge = edgeObjects[i]
+    let title = edge.getElementsByTagName('title')[0].innerHTML
+    let prerequisiteId = title.slice(0,title.indexOf('-'))
+    prerequisiteId = parseInt(prerequisiteId)
+   	let nodeId = title.slice(title.indexOf('-')+5)
+    nodeId = parseInt(nodeId)
+    if(!(nodeId in edges)) {
+    	edges[nodeId] = {}
+    }
+    edges[nodeId][prerequisiteId] = edge
+	}
+  return edges
+}
+
+function refreshSvgNodeStyle() {
+	let nodes = getNodesFromSvg()
+  for(let nodeId in topicSvgStyle){
+  	nodeId = parseInt(nodeId)
+    
+  	let nodeAttr = topicSvgStyle[nodeId]['node']
+  	for(let attr in nodeAttr) {
+    	let val = nodeAttr[attr]
+    	nodes[nodeId].getElementsByTagName('ellipse')[0].setAttribute(attr,val)
+    }
+  }
+}
+
+function refreshSvgEdgeStyle() {
+  let edges = getEdgesFromSvg()
+  for(let nodeId in topicSvgStyle) {
+    let prerequisiteIds = topicAttributes[nodeId]['prerequisites']
+    for(let i=0; i<prerequisiteIds.length; i++) {
+        let prerequisiteId = prerequisiteIds[i]
+        let edgeAttr = topicSvgStyle[nodeId]['edges'][prerequisiteId]
+        for(let attr in edgeAttr) {
+        	val = edgeAttr[attr]
+          edges[nodeId][prerequisiteId].getElementsByTagName('path')[0].setAttribute(attr,val)
+        }
+      }
+   }
+}
+
+function refreshSvgStyle() {
+  refreshSvgNodeStyle()
+  refreshSvgEdgeStyle()
+}
+
 
 ///////////////////////
 /* DISPLAY UTILITIES */
@@ -438,7 +584,7 @@ function updateInfoPanel(nodeId) {
   let courseColor = courses[courseId]['color']
   document.getElementById('infoPanel').style.background = courseColor
   
-  let nodeLabel = topicStyle[nodeId]['label']
+  let nodeLabel = topicDotStyle[nodeId]['label']
   nodeLabel = replaceAll(nodeLabel,'\\n',' ')
   document.getElementById('infoPanel-title').innerHTML = nodeLabel;
   
@@ -502,15 +648,21 @@ function interactive() {
 function onClick() {
   let nodeId = d3.select(this).selectAll('title').text();
   nodeId = parseInt(nodeId)
+  highlightLearningPath(nodeId)
   updateInfoPanel(nodeId)
+  refreshSvgStyle()
 };
 
 //////////
 /* MAIN */
 //////////
 
-var topicStyle = {}
-resetTopicStyle()
+var topicDotStyle = {}
+resetTopicDotStyle()
+
+var topicSvgStyle = {}
+resetTopicSvgStyle()
+
 var dot = createDot()
 
 var graphviz = d3.select("#graph").graphviz().attributer(attributer).logEvents(false);
