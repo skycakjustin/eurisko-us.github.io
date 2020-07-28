@@ -349,7 +349,7 @@ var topicAttributes = {
 function replaceAll(string, original, replacement) {
 		let prevString = string
     let newString = string.replace(original, replacement)
-    while(prevString != newString) {
+    while (prevString != newString) {
     		prevString = newString
         newString = newString.replace(original, replacement)
     }
@@ -360,12 +360,12 @@ function breakTextIntoLines(text, charsPerLine=20, leeway=5) {
   let words = text.split(' ')
   let result = ''
   let counter = 0
-  for(let i=0; i<words.length; i++) {
+  for (let i=0; i<words.length; i++) {
   	let word = words[i]
-    if(counter + word.length <= charsPerLine) {
+    if (counter + word.length <= charsPerLine) {
     	result += word+' '
       counter += word.length+1
-    } else if(counter <= charsPerLine-leeway && counter+word.length <= charsPerLine+leeway) {
+    } else if (counter <= charsPerLine-leeway && counter+word.length <= charsPerLine+leeway) {
     	result += word+'\\n'
       counter = 0
     } else {
@@ -386,7 +386,7 @@ function updateTopicDotStyle(nodeId, key, val) {
 }
 
 function resetTopicDotStyle() {
-  for(let nodeId in topicAttributes) {
+  for (let nodeId in topicAttributes) {
     let title = topicAttributes[nodeId]['title']
     let courseId = topicAttributes[nodeId]['course']
     let fillcolor = courses[courseId]['color']
@@ -399,16 +399,16 @@ function resetTopicDotStyle() {
 
 function createDot() {
 		let lines = []
-    for(let nodeId in topicAttributes) {
+    for (let nodeId in topicAttributes) {
     	let prerequisites = topicAttributes[nodeId]['prerequisites']
     	let line = '{'+prerequisites.join(';')+'} -> '+nodeId
       lines.push(line)
      }
     
-    for(let nodeId in topicDotStyle) {
+    for (let nodeId in topicDotStyle) {
         let line = nodeId
         let nodeAttr = topicDotStyle[nodeId]
-        for(let attr in nodeAttr) {
+        for (let attr in nodeAttr) {
           let val = nodeAttr[attr]
           line += ' ['+attr+'="'+val+'"]'
         }
@@ -441,16 +441,16 @@ function updateTopicSvgEdgeStyle(nodeId, prerequisiteId, key, val) {
 }
 
 function resetTopicSvgStyle() {
-  for(let nodeId in topicAttributes) {
+  for (let nodeId in topicAttributes) {
     let title = topicAttributes[nodeId]['title']
     let courseId = topicAttributes[nodeId]['course']
     topicSvgStyle[nodeId] = {'node':{}, 'edges':{}}
     
-    updateTopicSvgNodeStyle(nodeId, 'fill', courses[courseId]['color'])
-    updateTopicSvgNodeStyle(nodeId, 'stroke-width', 0)
+    updateTopicSvgNodeStyle (nodeId, 'fill', courses[courseId]['color'])
+    updateTopicSvgNodeStyle (nodeId, 'stroke-width', 0)
     
     let prerequisiteIds = topicAttributes[nodeId]['prerequisites']
-    for(i=0; i<prerequisiteIds.length; i++) {
+    for (i=0; i<prerequisiteIds.length; i++) {
     	let prerequisiteId = prerequisiteIds[i]
       topicSvgStyle[nodeId]['edges'][prerequisiteId] = {}
       updateTopicSvgEdgeStyle(nodeId, prerequisiteId, 'stroke-width', 1.01)
@@ -472,25 +472,25 @@ function boldEdge(nodeId, prerequisiteId) {
 
 function boldPrerequisiteEdges(nodeId){
 	let prerequisiteIds = topicAttributes[nodeId]['prerequisites']
-  for(let i=0; i<prerequisiteIds.length; i++) {
+  for (let i=0; i<prerequisiteIds.length; i++) {
   	let prerequisiteId = prerequisiteIds[i]
   	boldEdge(nodeId, prerequisiteId)
   }
 }
 
 function applyToAncestors(nodeGroupIds, f) {
-	if(!Array.isArray(nodeGroupIds)){
+	if (!Array.isArray(nodeGroupIds)){
   	nodeGroupIds = [nodeGroupIds]
   }
 
   let groupPrerequisites = []
-	for(let i=0; i<nodeGroupIds.length; i++) {
+	for (let i=0; i<nodeGroupIds.length; i++) {
     let nodeId = nodeGroupIds[i]
   	f(nodeId)
     let parents = topicAttributes[nodeId]['prerequisites']
-    for(let j=0; j<parents.length; j++) {
+    for (let j=0; j<parents.length; j++) {
     	let parentId = parents[j]
-    	if(!groupPrerequisites.includes(parentId)){
+    	if (!groupPrerequisites.includes(parentId)) {
     		groupPrerequisites.push(parentId)
       }
     }
@@ -509,44 +509,44 @@ function highlightLearningPath(nodeId) {
   applyToAncestors(nodeId, boldPrerequisiteEdges)
 }
 
-function getNodesFromSvg() {
-	let nodeObjects = document.getElementsByClassName('node')
-	let nodes = {}
-	for(let i=0; i<nodeObjects.length; i++) {
-    let node = nodeObjects[i]
-    let title = node.getElementsByTagName('title')[0].innerHTML
+function getNodeElementsFromSvg() {
+	let nodeElements_arr = document.getElementsByClassName('node')
+	let nodeElements_dict = {}
+	for (let i=0; i<nodeElements_arr.length; i++) {
+    let nodeElement = nodeElements_arr[i]
+    let title = nodeElement.getElementsByTagName('title')[0].innerHTML
     title = parseInt(title)
-    nodes[title] = node
+    nodeElements_dict[title] = nodeElement
 	}
-  return nodes
+  return nodeElements_dict
 }
 
-function getEdgesFromSvg() {
-	var edgeObjects = document.getElementsByClassName('edge')
-	var edges = {}
+function getEdgeElementsFromSvg() {
+	var edgeElements_arr = document.getElementsByClassName('edge')
+	var edgeElements_dict = {}
   
-  for(let i=0; i<edgeObjects.length; i++) {
-    let edge = edgeObjects[i]
+  for(let i=0; i<edgeElements_arr.length; i++) {
+    let edge = edgeElements_arr[i]
     let title = edge.getElementsByTagName('title')[0].innerHTML
     let prerequisiteId = title.slice(0,title.indexOf('-'))
     prerequisiteId = parseInt(prerequisiteId)
    	let nodeId = title.slice(title.indexOf('-')+5)
     nodeId = parseInt(nodeId)
-    if(!(nodeId in edges)) {
-    	edges[nodeId] = {}
+    if (!(nodeId in edgeElements_dict)) {
+    	edgeElements_dict[nodeId] = {}
     }
-    edges[nodeId][prerequisiteId] = edge
+    edgeElements_dict[nodeId][prerequisiteId] = edge
 	}
-  return edges
+  return edgeElements_dict
 }
 
 function refreshSvgNodeStyle() {
-	let nodes = getNodesFromSvg()
-  for(let nodeId in topicSvgStyle){
+	let nodes = getNodeElementsFromSvg()
+  for (let nodeId in topicSvgStyle) {
   	nodeId = parseInt(nodeId)
     
   	let nodeAttr = topicSvgStyle[nodeId]['node']
-  	for(let attr in nodeAttr) {
+  	for (let attr in nodeAttr) {
     	let val = nodeAttr[attr]
     	nodes[nodeId].getElementsByTagName('ellipse')[0].setAttribute(attr,val)
     }
@@ -554,13 +554,13 @@ function refreshSvgNodeStyle() {
 }
 
 function refreshSvgEdgeStyle() {
-  let edges = getEdgesFromSvg()
-  for(let nodeId in topicSvgStyle) {
+  let edges = getEdgeElementsFromSvg()
+  for (let nodeId in topicSvgStyle) {
     let prerequisiteIds = topicAttributes[nodeId]['prerequisites']
-    for(let i=0; i<prerequisiteIds.length; i++) {
+    for (let i=0; i<prerequisiteIds.length; i++) {
         let prerequisiteId = prerequisiteIds[i]
         let edgeAttr = topicSvgStyle[nodeId]['edges'][prerequisiteId]
-        for(let attr in edgeAttr) {
+        for (let attr in edgeAttr) {
         	val = edgeAttr[attr]
           edges[nodeId][prerequisiteId].getElementsByTagName('path')[0].setAttribute(attr,val)
         }
@@ -589,7 +589,7 @@ function updateInfoPanel(nodeId) {
   document.getElementById('infoPanel-title').innerHTML = nodeLabel;
   
   let sidepanelItems = ['Nothing here yet!']
-  if(nodeId in topicResources){
+  if (nodeId in topicResources) {
       sidepanelItems = topicResources[nodeId]['sidepanelItems']
   }
   let sidepanelItemsHTML = '<p>'+sidepanelItems.join('</p><hr><p>')+'</p>'
