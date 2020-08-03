@@ -1,11 +1,11 @@
 ---
 layout: archive
 title: ""
-permalink: /computational-modeling-2020-summer/
+permalink: /computation-and-modeling-2020-summer/
 author_profile: false
 ---
 
-# [<center>Computational Modeling</center>](#top)
+# [<center>Computation & Modeling</center>](#top)
 
 <center><b>Summer 2020</b></center>
 
