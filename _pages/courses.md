@@ -11,7 +11,7 @@ author_profile: false
 
 <b>Summer 2020</b>
 <font size="3em"><ul>
-    <li><a class="body" target="_blank" href="https://eurisko-us.github.io/computational-modeling-2020-summer">Computational Modeling</a></li>
+    <li><a class="body" target="_blank" href="https://eurisko-us.github.io/computation-and-modeling-2020-summer">Computation & Modeling</a></li>
 </ul></font> 
 
 </div>
