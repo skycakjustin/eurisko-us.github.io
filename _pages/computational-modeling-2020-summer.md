@@ -18,8 +18,12 @@ author_profile: false
 <font size="3em"><ol reversed>
     <li><b>Friday, July 17</b>
         <ul>
+            <li>Class Recording</li>
+            <li>Assignment Problems</li>
+        <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-24-1">Overfitting</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-24-2">Refactoring machine-learning and space-empires</a></li>
+        </ul>
         </ul>
     </li>
     <br>
