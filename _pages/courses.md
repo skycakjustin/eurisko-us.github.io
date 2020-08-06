@@ -9,7 +9,7 @@ author_profile: false
 
 <div style="width:100%; max-width:800px; margin:auto">  
     
-<b>Course Descriptions</b>
+<br><b>Course Descriptions</b>
 <font size="3em">
 <details>
     <summary>Computation & Modeling</summary><br>
