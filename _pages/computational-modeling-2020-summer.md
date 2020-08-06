@@ -10,10 +10,8 @@ author_profile: false
 <center><b>Summer 2020</b></center>
 
 <div style="width:100%; max-width:800px; margin:auto">  
-    
-<p><b>Assignments</b></p>
 
-<p>See <a class="body" target="_blank" href="https://eurisko-us.github.io/files/problem_graph_iteration_1.html">here</a> for a visual layout.</p>
+<p>Cohort 1 - <a class="body" target="_blank" href="https://eurisko-us.github.io/files/problem_graph_iteration_1.html">knowledge graph</a>, <a class="body" target="_blank" href="https://docs.google.com/spreadsheets/d/1LktrKUE1FW9qiV0tDG8XAspDxXTSUsbeZYet7dvrBgw/edit?usp=sharing">code review / refactoring / commandments</a>.</p>
 
 <font size="3em"><ol reversed>
     <li><b>Friday, July 17</b>
