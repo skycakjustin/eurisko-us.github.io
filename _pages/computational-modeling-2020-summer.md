@@ -17,7 +17,7 @@ author_profile: false
 
 <font size="3em"><ol reversed>
     <li><b>Friday, July 17</b>
-        <br>Class Recording
+        <br><a class="body" target="_blank" href="https://vimeo.com/445063480">Class Recording</a>
         <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-24-1">Overfitting</a></li>
@@ -26,6 +26,8 @@ author_profile: false
     </li>
     <br>
     <li><b>Wednesday, July 15</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-23-1">Matrix Tests</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-23-2">MergeSort</a></li>
@@ -34,6 +36,8 @@ author_profile: false
     </li>
     <br>
     <li><b>Monday, July 13</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-22-1">PolynomialRegressor Tests</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-22-2">Merging Two Sorted Arrays</a></li>
@@ -43,6 +47,8 @@ author_profile: false
     </li>
     <br>
     <li><b>Friday, July 10</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-0">Library Structure and Naming Conventions</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-1">Cartesian Product</a></li>
@@ -52,6 +58,8 @@ author_profile: false
     </li>
     <br>
     <li><b>Wednesday, July 8</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-20-1">Assert Statements and GradientDescent Tests</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-20-2">Space Empires - 3-Round Movement</a></li>
@@ -59,6 +67,8 @@ author_profile: false
     </li>
     <br>
     <li><b>Monday, July 6</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-19-1">Structure for <i>machine-learning</i> and <i>space-empires</i> Libraries</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-19-2">Generalizing GradientDescent to Functions with Any Number of Arguments</a></li>
@@ -67,6 +77,8 @@ author_profile: false
     </li>
     <br>
     <li><b>Friday, July 3</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-18-1">GradientDescent and PolynomialRegressor Classes</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-18-2">Heapsort</a></li>
@@ -75,6 +87,8 @@ author_profile: false
     </li>
     <br>
     <li><b>Wednesday, July 1</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-17-1">Quadratic Regression</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-17-2">Heapifying an Array</a></li>
@@ -83,6 +97,8 @@ author_profile: false
     </li>
     <br>
     <li><b>Monday, June 29</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-16-1">Grid Searching for the Best Linear Regression Coefficients via Gradient Descent</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-16-2">Breadth-First Search in a Binary Tree</a></li>
@@ -91,6 +107,8 @@ author_profile: false
     </li>
     <br>
     <li><b>Friday, June 26</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-15-1">Depth-First Search in a Binary Tree</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-15-2">Linear Regression via Gradient Descent</a></li>
@@ -99,6 +117,8 @@ author_profile: false
     </li>
     <br>
     <li><b>Wednesday, June 24</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-14-1">Building a Binary Tree from an Edge List (redo)</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-14-2">Linear Regression via the Pseudoinverse</a></li>
@@ -107,6 +127,8 @@ author_profile: false
     </li>
     <br>
     <li><b>Monday, June 22</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-13-1">Building a Binary Tree from an Edge List</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-13-2">Normalization and Distance Metrics</a></li>
@@ -115,6 +137,8 @@ author_profile: false
     </li>
     <br>
     <li><b>Friday, June 19</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-12-1">Huffman Compression</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-12-2">Building a Binary Tree by Repeatedly Appending</a></li>
@@ -124,6 +148,8 @@ author_profile: false
     </li>
     <br>
     <li><b>Wednesday, June 17</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-11-1">Timing Code</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-11-2">Shell Sort</a></li>
@@ -133,6 +159,8 @@ author_profile: false
     </li>
     <br>
     <li><b>Monday, June 15</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-10-1">Doubly Linked List</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-10-2">Histogram (Counting) Sort and Insertion Sort</a></li>
@@ -142,6 +170,8 @@ author_profile: false
     </li>
     <br>
     <li><b>Friday, June 12</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-9-1">Selection Sort and Bubble Sort</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-9-2">Singly Linked List Methods</a></li>
@@ -151,6 +181,8 @@ author_profile: false
     </li>
     <br>
     <li><b>Wednesday, June 10</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-8-1">Median, Covariance, and Correlation</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-8-2">Untangling a Nested List Comprehension</a></li>
@@ -161,6 +193,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Monday, June 8</b>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-7-1">Logic Within List Comprehensions</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-7-2">Factorial and Unlisting, Iteratively and Recursively</a></li>
@@ -170,6 +203,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Friday, June 5</b>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-6-1">Mean, Variance, and Standard Deviation</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-6-2">Identifying Is-a / Has-a Relationships Given a Class Hierarchy</a></li>
@@ -179,6 +213,8 @@ author_profile: false
     </li>
     <br>
     <li><b>Wednesday, June 3</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-5-0">Plotting Line Segments</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-5-1">Inheritance with Shape Classes</a></li>
@@ -188,6 +224,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Monday, June 1</b>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-4-1">List and Dictionary Comprehensions</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-4-2">Big-O Notation</a></li>
@@ -197,6 +234,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Friday, May 29</b>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-3-1">Stacks and Queues</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-3-2">Converting Between Flat and Nested Dictionaries</a></li>
@@ -206,6 +244,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Wednesday, May 27</b>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-2-1">Intersection and Union</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-2-2">Counting Characters in a String</a></li>
@@ -214,6 +253,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Monday, May 25</b>
+        <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-1-1">Converting Between Letters and Numbers</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-1-2">Checking a String for Symmetry</a></li>
