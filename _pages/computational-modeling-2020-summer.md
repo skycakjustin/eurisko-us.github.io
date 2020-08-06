@@ -16,7 +16,7 @@ author_profile: false
 <p>See <a class="body" target="_blank" href="https://eurisko-us.github.io/files/problem_graph_iteration_1.html">here</a> for a visual layout.</p>
 
 <font size="3em"><ol reversed>
-    <li>
+    <li><b>Friday, July 17</b>
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-24-1">Overfitting</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-24-2">Refactoring machine-learning and space-empires</a></li>
