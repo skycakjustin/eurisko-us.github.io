@@ -247,7 +247,7 @@ author_profile: false
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-2-1">Intersection and Union</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-2-2">Counting Characters in a String</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-2-3">Matrix Arithmetic</a></li>
-        </ul</font>
+            </ul></font>
     </li>
     <br>
     <li><b>Monday, May 25</b>
