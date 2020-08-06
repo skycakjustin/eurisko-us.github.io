@@ -17,7 +17,7 @@ author_profile: false
 
 <font size="3em"><ol reversed>
     <li><b>Friday, July 17</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/445063480">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/439424647">Class Recording</a>
         <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-24-1">Overfitting</a></li>
@@ -26,7 +26,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Wednesday, July 15</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/438745611">Class Recording</a>
         <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-23-1">Matrix Tests</a></li>
@@ -36,7 +36,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Monday, July 13</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/438026749">Class Recording</a>
         <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-22-1">PolynomialRegressor Tests</a></li>
@@ -47,7 +47,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Friday, July 10</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/437307884">Class Recording</a>
         <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-21-0">Library Structure and Naming Conventions</a></li>
@@ -58,7 +58,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Wednesday, July 8</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/436618003">Class Recording</a>
         <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-20-1">Assert Statements and GradientDescent Tests</a></li>
@@ -67,7 +67,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Monday, July 6</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/435914462">Class Recording</a>
         <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-19-1">Structure for <i>machine-learning</i> and <i>space-empires</i> Libraries</a></li>
@@ -77,7 +77,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Friday, July 3</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/435212995">Class Recording</a>
         <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-18-1">GradientDescent and PolynomialRegressor Classes</a></li>
@@ -87,7 +87,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Wednesday, July 1</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/434536986">Class Recording</a>
         <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-17-1">Quadratic Regression</a></li>
@@ -97,7 +97,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Monday, June 29</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/433820168">Class Recording</a>
         <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-16-1">Grid Searching for the Best Linear Regression Coefficients via Gradient Descent</a></li>
@@ -107,7 +107,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Friday, June 26</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/433016223">Class Recording</a>
         <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-15-1">Depth-First Search in a Binary Tree</a></li>
@@ -117,7 +117,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Wednesday, June 24</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/432341602">Class Recording</a>
         <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-14-1">Building a Binary Tree from an Edge List (redo)</a></li>
@@ -127,7 +127,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Monday, June 22</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/431632538">Class Recording</a>
         <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-13-1">Building a Binary Tree from an Edge List</a></li>
@@ -137,7 +137,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Friday, June 19</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/430890704">Class Recording</a>
         <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-12-1">Huffman Compression</a></li>
@@ -148,7 +148,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Wednesday, June 17</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/430194576">Class Recording</a>
         <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-11-1">Timing Code</a></li>
@@ -159,7 +159,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Monday, June 15</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/429448966">Class Recording</a>
         <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-10-1">Doubly Linked List</a></li>
@@ -170,7 +170,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Friday, June 12</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/428661581">Class Recording</a>
         <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-9-1">Selection Sort and Bubble Sort</a></li>
@@ -181,7 +181,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Wednesday, June 10</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/428361853">Class Recording</a>
         <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-8-1">Median, Covariance, and Correlation</a></li>
@@ -213,7 +213,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Wednesday, June 3</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/428361858">Class Recording</a>
         <br>Assignment Problems:
         <ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-5-0">Plotting Line Segments</a></li>
