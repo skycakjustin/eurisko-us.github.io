@@ -14,6 +14,78 @@ author_profile: false
 <br><p>Cohort 1 - <font size="2em"><a class="body" target="_blank" href="https://eurisko-us.github.io/files/problem_graph_iteration_1.html">knowledge graph</a>, <a class="body" target="_blank" href="https://docs.google.com/spreadsheets/d/1LktrKUE1FW9qiV0tDG8XAspDxXTSUsbeZYet7dvrBgw/edit?usp=sharing">code review / refactoring / commandments</a>.</font></p>
 
 <font size="3em"><ol reversed>
+    <li><b>Friday, August 7</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
+        <font size="2em"><ul>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
+        </ul></font>
+    </li>
+    <br>
+    <li><b>Wednesday, August 5</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
+        <font size="2em"><ul>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
+        </ul></font>
+    </li>
+    <br>
+    <li><b>Monday, August 3</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
+        <font size="2em"><ul>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
+        </ul></font>
+    </li>
+    <br>
+    <li><b>Friday, July 31</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
+        <font size="2em"><ul>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
+        </ul></font>
+    </li>
+    <br>
+    <li><b>Wednesday, July 29</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
+        <font size="2em"><ul>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
+        </ul></font>
+    </li>
+    <br>
+    <li><b>Monday, July 27</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
+        <font size="2em"><ul>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
+        </ul></font>
+    </li>
+    <br>
+    <li><b>Friday, July 24</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
+        <font size="2em"><ul>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
+        </ul></font>
+    </li>
+    <br>
+    <li><b>Wednesday, July 22</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
+        <font size="2em"><ul>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
+        </ul></font>
+    </li>
+    <br>
+    <li><b>Monday, July 20</b>
+        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br>Assignment Problems:
+        <font size="2em"><ul>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
+        </ul></font>
+    </li>
+    <br>
     <li><b>Friday, July 17</b>
         <br><a class="body" target="_blank" href="https://vimeo.com/439424647">Class Recording</a>
         <br>Assignment Problems:
