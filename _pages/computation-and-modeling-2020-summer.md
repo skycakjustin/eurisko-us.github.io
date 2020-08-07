@@ -15,15 +15,11 @@ author_profile: false
 
 <font size="3em"><ol reversed>
     <li><b>Friday, August 7</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
-        <br>Assignment Problems:
-        <font size="2em"><ul>
-        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
-        </ul></font>
+        <br><a class="body" target="_blank" href="https://vimeo.com/445706793">Class Recording</a>
     </li>
     <br>
     <li><b>Wednesday, August 5</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/445063480">Class Recording</a>
         <br>Assignment Problems:
         <font size="2em"><ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
@@ -31,7 +27,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Monday, August 3</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/444405022">Class Recording</a>
         <br>Assignment Problems:
         <font size="2em"><ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
@@ -39,7 +35,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Friday, July 31</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/443533945">Class Recording</a>
         <br>Assignment Problems:
         <font size="2em"><ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
@@ -47,7 +43,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Wednesday, July 29</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/442884146">Class Recording</a>
         <br>Assignment Problems:
         <font size="2em"><ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
@@ -55,7 +51,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Monday, July 27</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/442203785">Class Recording</a>
         <br>Assignment Problems:
         <font size="2em"><ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
@@ -63,7 +59,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Friday, July 24</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/441483520">Class Recording</a>
         <br>Assignment Problems:
         <font size="2em"><ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
@@ -71,7 +67,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Wednesday, July 22</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/440830013">Class Recording</a>
         <br>Assignment Problems:
         <font size="2em"><ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
@@ -79,7 +75,7 @@ author_profile: false
     </li>
     <br>
     <li><b>Monday, July 20</b>
-        <br><a class="body" target="_blank" href="https://vimeo.com/">Class Recording</a>
+        <br><a class="body" target="_blank" href="https://vimeo.com/440154918">Class Recording</a>
         <br>Assignment Problems:
         <font size="2em"><ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
