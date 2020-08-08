@@ -22,7 +22,9 @@ author_profile: false
         <br><a class="body" target="_blank" href="https://vimeo.com/445063480">Class Recording</a>
         <br>Assignment Problems:
         <font size="2em"><ul>
-        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-32-1">Logistic Regression by Hand</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-32-2">Breadth-First Search in a Graph</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-32-3">CombatPlayer Testing</a></li>
         </ul></font>
     </li>
     <br>
@@ -30,7 +32,9 @@ author_profile: false
         <br><a class="body" target="_blank" href="https://vimeo.com/444405022">Class Recording</a>
         <br>Assignment Problems:
         <font size="2em"><ul>
-        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-31-1">Conditional Probability</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-31-2">Depth-First Search in a Graph</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-31-3">CombatPlayer Testing (second iteration)</a></li>
         </ul></font>
     </li>
     <br>
@@ -38,7 +42,9 @@ author_profile: false
         <br><a class="body" target="_blank" href="https://vimeo.com/443533945">Class Recording</a>
         <br>Assignment Problems:
         <font size="2em"><ul>
-        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-30-1">Measuring How Well Coin Flip Simulations Approximate True Randomness</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-30-2">Node and Graph Classes</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-30-3">CombatPlayer Scenario Mapping (after first combat)</a></li>
         </ul></font>
     </li>
     <br>
@@ -46,7 +52,9 @@ author_profile: false
         <br><a class="body" target="_blank" href="https://vimeo.com/442884146">Class Recording</a>
         <br>Assignment Problems:
         <font size="2em"><ul>
-        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-29-1">Dummy Variables</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-29-2">Inspecting Distributions</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-29-3">CombatPlayer Tests</a></li>
         </ul></font>
     </li>
     <br>
@@ -54,7 +62,9 @@ author_profile: false
         <br><a class="body" target="_blank" href="https://vimeo.com/442203785">Class Recording</a>
         <br>Assignment Problems:
         <font size="2em"><ul>
-        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-28-1">Interaction Terms</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-28-2">Kullback-Leibler Divergence</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-28-3">CombatPlayer Scenario Mapping</a></li>
         </ul></font>
     </li>
     <br>
@@ -62,7 +72,8 @@ author_profile: false
         <br><a class="body" target="_blank" href="https://vimeo.com/441483520">Class Recording</a>
         <br>Assignment Problems:
         <font size="2em"><ul>
-        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-27-1">Multiple Linear Regression</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-27-2">Combat Engine</a></li>
         </ul></font>
     </li>
     <br>
@@ -70,7 +81,9 @@ author_profile: false
         <br><a class="body" target="_blank" href="https://vimeo.com/440830013">Class Recording</a>
         <br>Assignment Problems:
         <font size="2em"><ul>
-        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-26-1">Probability Distributions</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-26-2">Application of Breadth-First Search</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-26-3">space-empires / machine-learning Refactoring</a></li>
         </ul></font>
     </li>
     <br>
@@ -78,7 +91,8 @@ author_profile: false
         <br><a class="body" target="_blank" href="https://vimeo.com/440154918">Class Recording</a>
         <br>Assignment Problems:
         <font size="2em"><ul>
-        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-_-_">asdf</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-25-1">Monte Carlo Simulation</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-25-2">space-empires / machine-learning Refactoring</a></li>
         </ul></font>
     </li>
     <br>
