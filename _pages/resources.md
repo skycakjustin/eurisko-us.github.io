@@ -75,6 +75,148 @@ author_profile: false
   b_elements.append([5,6])
   B = Matrix(elements = b_elements)
   </code></pre>
+  <br>
+</details>
+
+<details>
+  <summary>tailor general classes to specific problems</summary>
+  <br><font color="red"><b>Don't do this:</b></font>
+  <pre><code>
+  poly_regress = PolynomialRegressor()
+  poly_regress.ingest_data(sandwich_data)
+  poly_regress.solve_coefficients(sandwich_situation = True)
+  </code></pre>
+  
+  <font color="green"><b>Do this instead:</b></font>
+  <pre><code>
+  Do the analysis manually, without the class PolynomialRegressor.
+  You can still use code from the class, but you should not actually modify the class.
+  </code></pre>
+  <br>
+</details>
+
+<details>
+  <summary>use inheritance in the absence of an "is-a" relationship</summary>
+  <br><font color="red"><b>Don't do this:</b></font>
+  <pre><code>
+  class Board(Player):
+   ...
+
+  (the Board is NOT a Player)
+  </code></pre>
+  
+  <font color="green"><b>Do this instead:</b></font>
+  <pre><code>
+  class Board:
+   ...
+  </code></pre>
+  <br>
+</details>
+
+<details>
+  <summary>give two methods similar and non-descriptive names</summary>
+  <br><font color="red"><b>Don't do this:</b></font>
+  <pre><code>
+  def move():
+   ...
+
+  def movement():
+   ...
+  </code></pre>
+  
+  <font color="green"><b>Do this instead:</b></font>
+  <pre><code>
+  def move():
+   ...
+
+  def get_previous_movement():
+   ...
+  </code></pre>
+  <br>
+</details>
+
+<details>
+  <summary>have a single function with two purposes</summary>
+  <br><font color="red"><b>Don't do this:</b></font>
+  <pre><code>
+  calc_median_or_mean(which="median")
+  </code></pre>
+  
+  <font color="green"><b>Do this instead:</b></font>
+  <pre><code>
+  Use two different functions:
+
+  calc_median()
+  calc_mean()
+  </code></pre>
+  <br>
+</details>
+
+<details>
+  <summary>use a long list comprehension</summary>
+  <br><font color="red"><b>Don't do this:</b></font>
+  <pre><code>
+  flips = ' '.join([''.join([['T','H'][round(random.random())] for _ in range(num_flips_per_sample)]) for _ in range(num_samples)]
+  </code></pre>
+  
+  <font color="green"><b>Do this instead:</b></font>
+  <pre><code>
+  Break it up.
+
+  flips = ''
+  for _ in range(num_samples):
+       sample = ''
+       for _ in range(num_flips_per_sample):
+            random_flip_is_heads = round(random.random())
+            random_flip = ['H', 'T'][random_flip_is_heads]
+            sample += random_flip
+       flips += ' ' + sample"
+  </code></pre>
+  <br>
+</details>
+
+<details>
+  <summary>reference object attributes indirectly</summary>
+  <br><font color="red"><b>Don't do this:</b></font>
+  <pre><code>
+  "combat_stats = {
+       'attack': unit1_attack,
+       'defense': unit1_defense,
+       'opponent_attack': unit2_attack,
+       'opponent_defense': unit2_defense
+  }
+  if combat_stats['attack'] > combat_stats['opponent_defense']:
+       print('hit!')
+  </code></pre>
+  
+  <font color="green"><b>Do this instead:</b></font>
+  <pre><code>
+  Use the object directly.
+
+  if unit1.attack_strength > unit2_defense_strength:
+       print('hit!')
+  </code></pre>
+  <br>
+</details>
+
+<details>
+  <summary>use arrays to store nonhomogenous data</summary>
+  <br><font color="red"><b>Don't do this:</b></font>
+  <pre><code>
+  sample_stats = ['HHT', 2/3, 1/3]
+  </code></pre>
+  
+  <font color="green"><b>Do this instead:</b></font>
+  <pre><code>
+  Use a dictionary:
+
+  sample_stats = {
+       'flips': 'HHT',
+       'proportion_heads': 2/3,
+       'proportion_tails': 1/3
+  }
+  </code></pre>
+  <br>
 </details>
 
 </font>
