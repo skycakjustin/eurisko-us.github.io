@@ -31,7 +31,9 @@ author_profile: false
 
 <div style="width:100%; max-width:800px; margin:auto"> 
 
+You shall NOT:
 <font size="3em"><ol>
 <li>set a class attribute outside of the class itself</li>
-<ol></font>
+</ol></font>
+  
 </div>
