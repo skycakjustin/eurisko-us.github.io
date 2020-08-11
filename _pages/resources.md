@@ -31,9 +31,30 @@ author_profile: false
 
 <div style="width:100%; max-width:800px; margin:auto"> 
 
-You shall NOT:
-<font size="3em"><ol>
-<li>set a class attribute outside of the class itself</li>
-</ol></font>
+<b>You SHALL:</b>
+
+<font size="3em">
+
+<details>
+  <summary>abide by Python conventions</summary>
+  adsf
+</details>
+
+<details>
+  <summary>name things what they are</summary>
+  adsf
+</details>
+
+</font>
+
+<b>You shall NOT:</b>
+<font size="3em">
+
+<details>
+  <summary>set a class attribute outside of the class itself</summary>
+  adsf
+</details>
+
+</font>
   
 </div>
