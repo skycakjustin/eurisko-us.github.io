@@ -6,8 +6,11 @@ main:
   #- title: "Blog"
   #  url: /blog/
 
-  - title: "People"
-    url: /people/
+  - title: "Submit Assignment"
+    url: /submit-assignment/
+
+  #- title: "People"
+  #  url: /people/
     
   #- title: "Teaching"
   #  url: /teaching/
