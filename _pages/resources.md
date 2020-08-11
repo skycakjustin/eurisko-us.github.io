@@ -52,14 +52,15 @@ author_profile: false
 
 <details>
   <summary>set a class attribute outside of the class itself</summary>
-  <br>What not to do:
+  <br><font color="red"><b>Don't do this:</b></font>
   <pre><code>
   A = Matrix(elements = [[1,2], [3,4]])
   B = A.copy()
   B.elements.append([5,6])
   B.num_rows += 1
   </code></pre>
-  <br>What to do instead:
+  
+  <font color="green"><b>Do this instead:</b></font>
   <pre><code>
   A = Matrix(elements = [[1,2], [3,4]])
   b_elements = A.elements
