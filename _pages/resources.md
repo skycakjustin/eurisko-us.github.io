@@ -47,12 +47,18 @@ author_profile: false
 
 </font>
 
-<b>You shall NOT:</b>
+<br><b>You shall NOT:</b>
 <font size="3em">
 
 <details>
   <summary>set a class attribute outside of the class itself</summary>
-  adsf
+  What not to do:
+  ```
+  A = Matrix(elements = [[1,2], [3,4]])
+  B = A.copy()
+  B.elements.append([5,6])
+  B.num_rows += 1
+  ```
 </details>
 
 </font>
