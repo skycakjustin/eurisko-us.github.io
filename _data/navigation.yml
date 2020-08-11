@@ -6,8 +6,8 @@ main:
   #- title: "Blog"
   #  url: /blog/
 
-  - title: "Submit Assignment"
-    url: /submit-assignment/
+  - title: "Resources"
+    url: /resources/
 
   #- title: "People"
   #  url: /people/
