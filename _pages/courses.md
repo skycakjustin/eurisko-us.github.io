@@ -22,7 +22,7 @@ author_profile: false
 <br><b>Machine Learning</b>
 
 <font size="3em"><ul>
-    <li>2020-21</li>
+    <li><a class="body" target="_blank" href="https://eurisko-us.github.io/machine-learning-2020-21">2020-21</a></li>
 </ul></font>
 
 </div>
