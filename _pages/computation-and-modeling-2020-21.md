@@ -13,7 +13,7 @@ author_profile: false
 
 <br><p>Cohort 2 - <!--<font size="2em"><a class="body" target="_blank" href="https://eurisko-us.github.io/files/problem_graph_iteration_2.html">knowledge graph</a>--><!--, <a class="body" target="_blank" href="https://docs.google.com/spreadsheets/d/1LktrKUE1FW9qiV0tDG8XAspDxXTSUsbeZYet7dvrBgw/edit?usp=sharing">code review / refactoring / commandments</a>-->.</font></p>
 
-<font size="3em"><ol reversed start="34">
+<font size="3em"><ol reversed start="1">
     <li><b>Wednesday, August 19</b>
         <!--<br><a class="body" target="_blank" href="https://vimeo.com/445063480">Class Recording</a>-->
         <br>Assignment Problems (will be graded Thursday night, at midnight)
