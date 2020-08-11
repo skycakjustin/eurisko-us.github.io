@@ -18,9 +18,9 @@ author_profile: false
         <br><a class="body" target="_blank" href="https://vimeo.com/445063480">Class Recording</a>
         <br>Assignment Problems:
         <font size="2em"><ul>
-        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-32-1">Logistic Regression by Hand</a></li>
-        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-32-2">Breadth-First Search in a Graph</a></li>
-        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-32-3">CombatPlayer Testing - Iteration 3</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-33-1">Logistic Regression via Code</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-33-2">Likelihood of Coin Flipping</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-33-3">CombatPlayer Scenario Mapping - Descending Die Rolls</a></li>
         </ul></font>
     </li>
     <br>
