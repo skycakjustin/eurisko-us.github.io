@@ -37,12 +37,20 @@ author_profile: false
 
 <details>
   <summary>abide by Python conventions</summary>
-  adsf
+  <ul>
+    <li>variables, functions, and files use <code>snake_case</code></li>
+    <li>classes use <code>PascalCase</code></li>
+    <li>indents are 4 spaces</li>
+  </ul>
 </details>
 
 <details>
   <summary>name things what they are</summary>
-  adsf
+  <ul>
+    <li>variables and classes should be nouns</li>
+    <li>functions (including methods) should be verbs</li>
+    <li>names should be descriptive. It's okay to make a name several words long if you need. For example, <code>compute_conditional_probability()</code> is WAY better than <code>cp()</code> or <code>prob()</code>.</li>
+  </ul> 
 </details>
 
 </font>
