@@ -8,10 +8,10 @@ author_profile: false
 # [<center>Resources</center>](#top)
 
 <div style="width:100%; max-width:800px; margin:auto">  
-<center><b><a class="body" href="https://eurisko-us.github.io/resources/#submit-assignment">Submit Assignment</a> • <a class="body" href="https://eurisko-us.github.io/guidelines/#honor-code">Honor Code</a> • <a class="body" href="https://eurisko-us.github.io/guidelines/#coding-commandments">Coding Commandments</a></b></center>  
+<center><b><a class="body" href="https://eurisko-us.github.io/resources/#submit-assignment">Submit Assignment</a> • <a class="body" href="https://eurisko-us.github.io/resources/#honor-code">Honor Code</a> • <a class="body" href="https://eurisko-us.github.io/resources/#coding-commandments">Coding Commandments</a></b></center>  
 </div>
 
-# [<center>Submit Assignment</center>](#submit-assignment)
+## [<center>Submit Assignment</center>](#submit-assignment)
 
 <div style="width:100%; max-width:800px; margin:auto"> 
 
@@ -21,9 +21,13 @@ author_profile: false
 
 </div>
 
-# [<center>Honor Code</center>](#honor-code)
+## [<center>Honor Code</center>](#honor-code)
 
-# [<center>Coding Commandments</center>](#coding-commandments)
+<div style="width:100%; max-width:800px; margin:auto"> 
+  
+</div>
+
+## [<center>Coding Commandments</center>](#coding-commandments)
 
 <div style="width:100%; max-width:800px; margin:auto"> 
 
