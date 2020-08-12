@@ -33,7 +33,7 @@ author_profile: false
 
 <div style="width:100%; max-width:800px; margin:auto"> 
 
-<b>You SHALL:</b>
+<b>You SHALL...</b>
 
 <font size="3em">
 
@@ -57,7 +57,7 @@ author_profile: false
 
 </font>
 
-<br><b>You shall NOT:</b>
+<br><b>You shall NOT...</b>
 <font size="3em">
 
 <details>
