@@ -24,16 +24,16 @@ author_profile: false
 ## [<center>Collaboration Policy</center>](#collaboration-policy)
 
 <div style="width:100%; max-width:800px; margin:auto"> 
-  In general, you are free to get help from others on assignments. However, you are not allowed to copy (i.e. plagiarize) others' code.
+  <br>In general, you are free to get help from others on assignments. However, you are not allowed to copy (i.e. plagiarize) others' code.
   
-  <br><b>Note:</b> if you copy code and then change the variable names, it still counts as plagiarism.
+  <br><br><b>Note:</b> if you copy code and then change the variable names, it still counts as plagiarism.
 </div>
 
 ## [<center>Coding Commandments</center>](#coding-commandments)
 
 <div style="width:100%; max-width:800px; margin:auto"> 
 
-<b>You SHALL...</b>
+<br><b>You SHALL...</b>
 
 <font size="3em">
 
