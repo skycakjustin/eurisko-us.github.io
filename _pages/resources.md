@@ -26,7 +26,7 @@ author_profile: false
 <div style="width:100%; max-width:800px; margin:auto"> 
   In general, you are free to get help from others on assignments. However, you are not allowed to copy (i.e. plagiarize) others' code.
   
-  Note: if you copy code and then change the variable names, it still counts as plagiarism.
+  <br><b>Note:</b> if you copy code and then change the variable names, it still counts as plagiarism.
 </div>
 
 ## [<center>Coding Commandments</center>](#coding-commandments)
