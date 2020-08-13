@@ -233,7 +233,7 @@ author_profile: false
   <pre><code>
   do all that you can to figure out the error before asking for help
   1. google the error!
-  2. keep clicking on links until  everything you've read starts to sound
+  2. keep clicking on links until everything you've read starts to sound
      like something you read previously
   3. walk away from the problem and then come back to it later
   4. if you still can't figure it out, then write up a post on Slack.
