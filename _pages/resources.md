@@ -236,7 +236,7 @@ author_profile: false
   2. keep clicking on links until  everything you've read starts to sound
      like something you read previously
   3. walk away from the problem and then come back to it later
-  4. if you still can't figure it out, then write up a post on discord.
+  4. if you still can't figure it out, then write up a post on Slack.
      Include the following:
         * the error
         * the part of your code
