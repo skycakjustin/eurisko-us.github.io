@@ -33,6 +33,8 @@ author_profile: false
 
 <div style="width:100%; max-width:800px; margin:auto"> 
   
+<br>Your final grade will be a weighted average of the following categories:<br>
+  
 <font size="3em"><ul>
   <li><b>Assignments (30%).</b> Every class, you will have an assignment consisting of multiple problems from a variety of domains. Assignments will be graded for both functionality and code quality.</li>
   <li><b>Biweekly Quizzes (30%).</b> We will have 2 quizzes each month: one on the last class on or before the 15th of the month, and another on the last class on or before the last day of the month. These quizzes will be short free-response quizzes focused on the core principles covered in the assignments.</li>
