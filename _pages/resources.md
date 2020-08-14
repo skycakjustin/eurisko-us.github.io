@@ -36,10 +36,6 @@ author_profile: false
 <br><b>You SHALL...</b>
 
 <font size="3em">
-  
-<details>
-  <summary><a class="body" href="http://pep8online.com/">lint</a> your code</summary>
-</details>
 
 <details>
   <summary>abide by Python conventions</summary>
@@ -57,6 +53,10 @@ author_profile: false
     <li>functions (including methods) should be verbs</li>
     <li>names should be descriptive. It's okay to make a name several words long if you need. For example, <code>compute_conditional_probability()</code> is WAY better than <code>cp()</code> or <code>prob()</code>.</li>
   </ul> 
+</details>
+
+<details>
+  <summary><a class="body" href="http://pep8online.com/">lint</a> your code</summary>
 </details>
 
 </font>
