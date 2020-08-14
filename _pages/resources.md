@@ -27,7 +27,7 @@ author_profile: false
   <br>In general, you are free to get help from others on assignments. However, you are not allowed to copy (i.e. plagiarize) others' code.
   
   <br><br><b>Note:</b> if you copy code and then change the variable names, it still counts as plagiarism.
-</div
+</div>
 
 ## [<center>Grade Breakdown</center>](#grade-breakdown)
 
