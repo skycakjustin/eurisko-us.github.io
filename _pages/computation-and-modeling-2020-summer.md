@@ -7,11 +7,11 @@ author_profile: false
 
 # [<center>Computation & Modeling</center>](#top)
 
-<center><b>Summer 2020</b></center>
+<center><b>Summer 2020</b> (Cohort 1)</center>
 
 <div style="width:100%; max-width:800px; margin:auto">  
 
-<br><p>Cohort 1 - <font size="2em"><a class="body" target="_blank" href="https://eurisko-us.github.io/files/problem_graph_iteration_1.html">knowledge graph</a>.</font></p>
+<br>
 
 <font size="3em"><ol reversed>
     <li><b>Friday, August 7</b>
