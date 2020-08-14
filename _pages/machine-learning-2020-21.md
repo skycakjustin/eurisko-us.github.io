@@ -7,11 +7,11 @@ author_profile: false
 
 # [<center>Machine Learning</center>](#top)
 
-<center><b>2020-21</b></center>
+<center><b>2020-21</b> (Cohort 1)</center>
 
 <div style="width:100%; max-width:800px; margin:auto">  
 
-<br><p>Cohort 1 - <font size="2em"><a class="body" target="_blank" href="https://eurisko-us.github.io/files/problem_graph_iteration_1.html">knowledge graph</a>, <a class="body" target="_blank" href="https://docs.google.com/spreadsheets/d/1LktrKUE1FW9qiV0tDG8XAspDxXTSUsbeZYet7dvrBgw/edit?usp=sharing">refactoring logs</a>.</font></p>
+<br>
 
 <font size="3em"><ol reversed start="34">
     <li><b>Wednesday, August 19</b>
