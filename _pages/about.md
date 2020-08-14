@@ -19,9 +19,9 @@ redirect_from:
   <br>
   Eurisko is a group of high schoolers working on advanced projects in computer science. It was formed during the summer of 2020 as a spinoff of <a class="body" target="_blank" href="https://mathacademy.us">Math Academy</a>.<br><br>
 
-<b>What kinds of projects?</b><br>
+<!--<b>What kinds of projects?</b><br>-->
 
-<font size="3em">Students are building a machine learning library and a Space Empires game from scratch, with the aim of creating intelligent game-playing agents.</font>
+<font size="3em">(In particular, students are building a machine learning library and a Space Empires game from scratch, with the aim of creating intelligent game-playing agents.)</font>
 
 
 </div>
