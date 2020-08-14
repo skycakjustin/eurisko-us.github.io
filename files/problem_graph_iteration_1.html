@@ -621,11 +621,11 @@ function updateInfoPanel(nodeId) {
   let processedSidepanelItems = []
   for (let item of sidepanelItems) {
   	if (Array.isArray(item)) {
-      item = '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-'+item[0]+'" target="_blank">'+item[1]+'</a>'
+      item = '<a href="https://eurisko-us.github.io/files/all_problems_iteration_1.html#Problem-'+item[0]+'" target="_blank">'+item[0]+' '+item[1]+'</a>'
     }
     processedSidepanelItems.push(item)
   }
-  let sidepanelItemsHTML = '<p>'+processedSidepanelItems.join('</p><hr><p>')+'</p>'
+  let sidepanelItemsHTML = '<p>'+processedSidepanelItems.reverse().join('</p><hr><p>')+'</p>'
   document.getElementById('infoPanel-sidepanelItems').innerHTML = sidepanelItemsHTML
   
   //MathJax.Hub.Queue(["Typeset",MathJax.Hub,'infoPanel-sidepanelItems']); // typeset any new mathjax | https://docs.mathjax.org/en/v1.0/typeset.html
