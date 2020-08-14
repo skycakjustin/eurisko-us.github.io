@@ -36,6 +36,10 @@ author_profile: false
 <br><b>You SHALL...</b>
 
 <font size="3em">
+  
+<details>
+  <summary><a class="body" href="http://pep8online.com/">lint</a> your code</summary>
+</details>
 
 <details>
   <summary>abide by Python conventions</summary>
