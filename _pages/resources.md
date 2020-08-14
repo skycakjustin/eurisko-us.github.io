@@ -8,7 +8,7 @@ author_profile: false
 # [<center>Resources</center>](#top)
 
 <div style="width:100%; max-width:800px; margin:auto">  
-<center><b><a class="body" href="https://eurisko-us.github.io/resources/#submit-assignment">Submit Assignment</a> • <a class="body" href="https://eurisko-us.github.io/resources/#collaboration-policy">Collaboration Policy</a> • <a class="body" href="https://eurisko-us.github.io/resources/#coding-commandments">Coding Commandments</a></b></center>  
+<center><b><a class="body" href="https://eurisko-us.github.io/resources/#submit-assignment">Submit Assignment</a> • <a class="body" href="https://eurisko-us.github.io/resources/#collaboration-policy">Collaboration Policy</a> • <a class="body" href="https://eurisko-us.github.io/resources/#coding-commandments">Coding Commandments</a> • <a class="body" href="https://eurisko-us.github.io/resources/#grade-breakdown">Grade Breakdown</a></b></center>  
 </div>
 
 ## [<center>Submit Assignment</center>](#submit-assignment)
@@ -271,4 +271,16 @@ author_profile: false
 
 </font>
   
+</div>
+
+## [<center>Grade Breakdown</center>](#grade-breakdown)
+
+<div style="width:100%; max-width:800px; margin:auto"> 
+  
+<font size="3em"><ul>
+  <li><b>Assignments (30%).</b> Every class, you will have an assignment consisting of multiple problems from a variety of domains. Assignments will be graded for both functionality and code quality.</li>
+  <li><b>Biweekly Quizzes (30%).</b> We will have 2 quizzes each month: one on the last class on or before the 15th of the month, and another on the last class on or before the last day of the month. These quizzes will be short free-response quizzes focused on the core principles covered in the assignments.</li>
+  <li><b>Library Quality (30%).</b> At the end of the course, your code libraries will be graded for both functionality and code quality. So, be sure to refactor your code appropriately each time you do an assignment!</li>
+  <li><b>Code Review (10%).</b> Each assignment, you will review another student's code and identify 3 specific things that could be improved.</li>
+</ul></font>
 </div>
