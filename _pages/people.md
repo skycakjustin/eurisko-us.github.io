@@ -13,11 +13,11 @@ author_profile: false
 
 <br><b>Current Students</b>
 <font size="3em"><ul>
-    <li>David Gieselman '22 - <font size="2em"><a class="body" target="_blank" href="https://github.com/DrM00G">Github</a></font></li>
-    <li>George Meza '22 - <font size="2em"><a class="body" target="_blank" href="https://github.com/geomeza">Github</a></font></li>
-    <li>Riley Paddock '22 - <font size="2em"><a class="body" target="_blank" href="https://github.com/RileyPaddock">Github</a></font></li>
-    <li>Colby Roberts '22 - <font size="2em"><a class="body" target="_blank" href="https://github.com/C0BBL3">Github</a></font></li>
-    <li>Elijah Tarr '22 - <font size="2em"><a class="body" target="_blank" href="https://github.com/eoriont">Github</a></font></li>
+    <li>David Gieselman '22 <!-- - <font size="2em"><a class="body" target="_blank" href="https://github.com/DrM00G">Github</a></font>--></li>
+    <li>George Meza '22 <!-- - <font size="2em"><a class="body" target="_blank" href="https://github.com/geomeza">Github</a></font>--></li>
+    <li>Riley Paddock '22 <!-- - <font size="2em"><a class="body" target="_blank" href="https://github.com/RileyPaddock">Github</a></font>--></li>
+    <li>Colby Roberts '22 <!-- - <font size="2em"><a class="body" target="_blank" href="https://github.com/C0BBL3">Github</a></font>--></li>
+    <li>Elijah Tarr '22 <!-- - <font size="2em"><a class="body" target="_blank" href="https://github.com/eoriont">Github</a></font>--></li>
 </ul></font> 
 
 </div>
