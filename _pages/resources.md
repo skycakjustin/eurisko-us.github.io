@@ -8,7 +8,17 @@ author_profile: false
 # [<center>Resources</center>](#top)
 
 <div style="width:100%; max-width:800px; margin:auto">  
-<center><b><a class="body" href="https://eurisko-us.github.io/resources/#submit-assignment">Submit Assignment</a> • <a class="body" href="https://eurisko-us.github.io/resources/#coding-commandments">Coding Commandments</a> • <a class="body" href="https://eurisko-us.github.io/resources/#grade-breakdown">Grade Breakdown</a> • <a class="body" href="https://eurisko-us.github.io/resources/#collaboration-policy">Collaboration Policy</a></b></center>  
+<center><b><a class="body" href="https://eurisko-us.github.io/resources/#class-meetings">Class Meetings</a> • <a class="body" href="https://eurisko-us.github.io/resources/#submit-assignment">Submit Assignment</a> • <a class="body" href="https://eurisko-us.github.io/resources/#coding-commandments">Coding Commandments</a> • <a class="body" href="https://eurisko-us.github.io/resources/#grade-breakdown">Grade Breakdown</a> • <a class="body" href="https://eurisko-us.github.io/resources/#collaboration-policy">Collaboration Policy</a></b></center>  
+</div>
+
+## [<center>Class Meetings</center>](#class-meetings)
+
+<div style="width:100%; max-width:800px; margin:auto"> 
+
+<br>Class meetings will take place on WebEx: <a class="body" href="https://eurisko-us.github.io/resources/#class-meetings">https://pusd.webex.com/meet/skycak.justin</a>
+
+<br>Dates/times are to-be-determined, but will be firmed up soon.
+
 </div>
 
 ## [<center>Submit Assignment</center>](#submit-assignment)
