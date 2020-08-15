@@ -17,7 +17,7 @@ author_profile: false
 
 <br>Class meetings will take place on WebEx: <a class="body" href="https://eurisko-us.github.io/resources/#class-meetings">https://pusd.webex.com/meet/skycak.justin</a>
 
-<br>Dates/times are to-be-determined, but will be firmed up soon.
+<br><br>Dates/times are to-be-determined, but will be firmed up soon.
 
 </div>
 
