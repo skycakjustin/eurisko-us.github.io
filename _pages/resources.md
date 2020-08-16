@@ -17,7 +17,7 @@ author_profile: false
 
 <br>Class meetings will take place on WebEx: <a class="body" href="https://eurisko-us.github.io/resources/#class-meetings">https://pusd.webex.com/meet/skycak.justin</a>
 
-<br><b>Computation & Modeling</b>
+<br><br><b>Computation & Modeling</b>
 <font size="3em"><ul>
   <li>"B" Mondays from 8:30-8:50am</li>
   <li>Tuesdays/Thursdays from 8:30-9:10am</li>
