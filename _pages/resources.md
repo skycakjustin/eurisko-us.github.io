@@ -35,12 +35,17 @@ author_profile: false
 
 <div style="width:100%; max-width:800px; margin:auto"> 
 
-<br>Before you submit your assignment, make sure that your code runs, follows the <a class="body" href="https://eurisko-us.github.io/resources/#coding-commandments">coding commandments</a>, and satisfies ALL the requirements outlined in the assignment!<br><br>
+<br>Assignments will be submitted on Canvas. You will just need to paste links to your  repl.it files, e.g. https://repl.it/@jpskycak/assignment-problems/convert_numbers.py 
 
+<br>Before you submit your assignment, make sure that your code runs, follows the <a class="body" href="https://eurisko-us.github.io/resources/#coding-commandments">coding commandments</a>, and satisfies ALL the requirements outlined in the assignment!
+
+<!--
+<br><br>
 <details>
 <summary><i>Click here to expand the submission form.</i></summary><br>
 <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwhanUMP5vbWSdGG7hBJdUswD_QUuN2QDeLeODLXKAkY9hhw/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></center>
 </details>
+-->
 
 </div>
 
