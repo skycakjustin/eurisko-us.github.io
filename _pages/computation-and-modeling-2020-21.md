@@ -16,11 +16,12 @@ author_profile: false
 <font size="3em"><ol reversed start="1">
     <li><b>Wednesday, August 19</b>
         <!--<br><a class="body" target="_blank" href="https://vimeo.com/445063480">Class Recording</a>-->
-        <br>Assignment Problems (<a class="body" target="_blank" href="https://eurisko-us.github.io/resources/#submit-assignment">submit</a> by Thursday at midnight)
+        <br>Assignment Problems (<a class="body" target="_blank" href="https://eurisko-us.github.io/resources/#submit-assignment">submit</a> by Sunday at midnight)
         <font size="2em"><ul>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_2.html#Problem-1-1">Getting Started with Repl.it and Github</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_2.html#Problem-1-2">Testing a String for Symmetry</a></li>
         <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_2.html#Problem-1-3">Converting Between Letters and Numbers</a></li>
+        <li><a class="body" target="_blank" href="https://eurisko-us.github.io/files/all_problems_iteration_2.html#Problem-1-4">Checking Whether a Number is Prime</a></li>
         </ul></font>
     </li>
     <br>
