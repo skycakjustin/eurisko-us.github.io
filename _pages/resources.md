@@ -64,6 +64,8 @@ author_profile: false
   <li><b>Library Quality (30%).</b> At the end of the course, your code libraries will be graded for both functionality and code quality. So, be sure to refactor your code appropriately each time you do an assignment!</li>
   <li><b>Code Review (10%).</b> Each assignment, you will review another student's code and identify 3 specific things that could be improved.</li>
 </ul></font>
+
+**Note:** Late assignments are marked down by 20% per day late.
 </div>
 
 ## [<center>Coding Commandments</center>](#coding-commandments)
