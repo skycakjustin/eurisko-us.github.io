@@ -13199,6 +13199,50 @@ PASSED</code></pre>
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Problem-1-4">Problem 1-4<a class="anchor-link" href="#Problem-1-4">&#182;</a></h1><p>(2 points for passing tests, 2 points for code quality)</p>
+<p>Write a function <code>is_prime(n)</code> that checks if an integer input $n &gt; 1$ is prime by checking whether $m | n$ for any integer $m \in \left\{ 2, 3, \ldots, \left\lfloor \dfrac{n}{2} \right\rfloor \right\}.$</p>
+<ul>
+<li><p>$m|n$ means "$m$ divides $n$"</p>
+</li>
+<li><p>$\left\lfloor \dfrac{n}{2} \right\rfloor$ is called the "floor" of $\dfrac{n}{2},$ i.e. the greatest integer that is less than or equal to $\dfrac{n}{2}.$</p>
+</li>
+</ul>
+<p>(Hint: Check for divisibility within a for loop.)</p>
+<p>Also, <code>assert</code> that your function passes the following tests:</p>
+
+<pre><code>&gt;&gt;&gt; is_prime(59)
+True
+&gt;&gt;&gt; is_prime(51)
+False</code></pre>
+<p>To be clear -- when you run <code>is_prime.py</code>, your code should print the following:</p>
+
+<pre><code>&gt;&gt;&gt; python is_prime.py
+
+testing is_prime on input 59...
+PASSED
+
+testing is_prime on input 51...
+PASSED</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
     </div>
   </div>
 </body>
