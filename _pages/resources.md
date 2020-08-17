@@ -15,7 +15,7 @@ author_profile: false
 
 <div style="width:100%; max-width:800px; margin:auto"> 
 
-<br>Class meetings will take place on WebEx: <a class="body" href="https://eurisko-us.github.io/resources/#class-meetings">https://pusd.webex.com/meet/skycak.justin</a>
+<br>Class meetings will take place on Google Hangouts: <a class="body" href="https://meet.google.com/ohx-efji-xpg">https://meet.google.com/ohx-efji-xpg</a>
 
 <br><br><b>Computation & Modeling</b>
 <font size="3em"><ul>
