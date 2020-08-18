@@ -20,13 +20,13 @@ author_profile: false
 <br><br><b>Computation & Modeling</b>
 <font size="3em"><ul>
   <li>"B" Mondays from 8:30-8:50am</li>
-  <li>Wednesdays/Fridays from 8:30-9:15am</li>
+  <li>Wednesdays/Fridays from 8:30-9:20am</li>
 </ul></font>
 
 <br><b>Machine Learning</b>
 <font size="3em"><ul>
   <li>"B" Mondays from 8:50-9:10am</li>
-  <li>Wednesdays/Fridays from 9:15-9:57am</li>
+  <li>Wednesdays/Fridays from 9:20-10:05am</li>
 </ul></font>
 
 </div>
